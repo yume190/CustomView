@@ -97,12 +97,12 @@ class CustomViewWithSwift: UIView {
 class CustomViewWithSwift: UIView {
 
     @IBInspectable var labelColor: UIColor
-    @IBInspectable var labelText: NSString
+    @IBInspectable var labelText: NSString = ""
     @IBInspectable var labelRect: CGRect
 
     init(coder : NSCoder) {
         labelColor = UIColor.blackColor()
-        labelText = NSString()
+        //labelText = NSString()
         labelRect = CGRect(x:0.0,y: 0.0,width: 200.0,height: 40.0)
 
         super.init(coder:coder)
