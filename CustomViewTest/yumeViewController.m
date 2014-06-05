@@ -7,8 +7,9 @@
 //
 
 #import "yumeViewController.h"
+#import "TemplateView1.h"
 
-@interface yumeViewController ()
+@interface yumeViewController ()<TemplateView1Delegate>
 
 @end
 
@@ -24,6 +25,10 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)TemplateView:(TemplateView1 *)templateView WithValueChange:(float)value{
+    NSLog(@"value : %0.f",value);
 }
 
 @end
