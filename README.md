@@ -4,10 +4,10 @@ CustomView
 IOS Custom View with xib(IOS 7 &amp; 8) and Live Render (IOS 8)
 
 ### Quick Link
- * [Custom View With xib (IOS 7 &amp; 8)](#custom-view-with-xib-ios-7--8)
+ * [Custom View With xib (IOS 7 &amp; 8)](#xib)
  * [Live Render (IOS 8)](#live-render-ios-8)
 
-# Custom View With xib (IOS 7 &amp; 8)
+# <a id="xib"></a>Custom View With xib (IOS 7 &amp; 8)
 
 Related Documents
  * [CustomView.h](CustomViewTest/TemplateView1.h)
