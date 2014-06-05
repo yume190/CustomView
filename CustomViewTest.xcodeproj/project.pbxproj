@@ -151,6 +151,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4D2B7DA0194026E0001106A6 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		4D8B2A8F1910E7AE0023EA7F /* CustomViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8B2A921910E7AE0023EA7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4D8B2A941910E7AE0023EA7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -296,6 +297,7 @@
 			children = (
 				4D8B2AC71910E7C60023EA7F /* TemplateView1.h */,
 				4D8B2AC81910E7C60023EA7F /* TemplateView1.m */,
+				4D2B7DA0194026E0001106A6 /* MyPlayground.playground */,
 				4D8B2AD21910F3080023EA7F /* TemplateView1.xib */,
 				4D8B2AA11910E7AE0023EA7F /* yumeAppDelegate.h */,
 				4D8B2AA21910E7AE0023EA7F /* yumeAppDelegate.m */,

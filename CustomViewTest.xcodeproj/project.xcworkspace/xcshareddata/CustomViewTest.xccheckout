@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1144986A-59CE-4705-A033-EEAD7DC7CA18</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CustomViewTest</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>21FEF971-D14E-4B98-8AD4-3C2AB88509DF</key>
+		<string>https://github.com/yume190/CustomView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CustomViewTest.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>21FEF971-D14E-4B98-8AD4-3C2AB88509DF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yume190/CustomView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>21FEF971-D14E-4B98-8AD4-3C2AB88509DF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>21FEF971-D14E-4B98-8AD4-3C2AB88509DF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CustomViewTest2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
