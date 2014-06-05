@@ -59,7 +59,7 @@ Related Documents
 
 <pre><code>@property (assign) NSString* vTitle;</code></pre>
 
- * Implement awakeFromNib in Custom.m
+ * Implement awakeFromNib in CustomView.m
 
 <pre><code>- (void)awakeFromNib {
     labelTitle.text = vTitle;
