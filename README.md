@@ -12,16 +12,16 @@ Related Documents
 
 ### Step 1
  * Create a CustomView class inherit from UIView.(ex:CustomView.h & CustomView.m)
- * then Create xib file with same name.(ex:CustomView.xib)
+ * Then create xib file with same name.(ex:CustomView.xib)
 
 ### Step 2
- * click the xib file
- * find the File's Owner and click it
+ * Click the xib file
+ * Find the File's Owner and click it
  * command + option + 3
- * input your Custom Class name.(ex:Custom)
+ * Input your Custom Class name.(ex:Custom)
 
 ### Step 3
- *# implement initWithCoder method
+ * Implement initWithCoder method
 
 <pre><code>- (void) setup{
     NSString *nibName = NSStringFromClass([self class]);
@@ -50,9 +50,13 @@ Related Documents
 | Key Path     | Type         | Value  |
 | :------------ |:--------------|:-------|
 |vTitle|String|the title|
+
  * Create a property in CustomView.h
+
 <pre><code>@property (assign) NSString* vTitle;</code></pre>
+
  * Implement awakeFromNib in Custom.m
+
 <pre><code>- (void)awakeFromNib {
     labelTitle.text = vTitle;
 }</code></pre>
