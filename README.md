@@ -22,7 +22,6 @@ Related Documents
 
 ## Step 3
  * implement initWithCoder method
-<pre><code>
 
     - (void) setup{
         NSString *nibName = NSStringFromClass([self class]);
@@ -40,8 +39,6 @@ Related Documents
         }
         return self;
     }
-    
-</code></pre>
 
 ## Step 4 (Optional)
  * If you want to input your parameter at storyboard.
