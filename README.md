@@ -10,18 +10,18 @@ Related Documents
  * [CustomView.m](CustomViewTest/TemplateView1.m)
  * [CustomView.xib](CustomViewTest/TemplateView1.xib)
 
-## Step 1
+### Step 1
  * Create a CustomView class inherit from UIView.(ex:CustomView.h & CustomView.m)
  * then Create xib file with same name.(ex:CustomView.xib)
 
-## Step 2
+### Step 2
  * click the xib file
  * find the File's Owner and click it
  * command + option + 3
  * input your Custom Class name.(ex:Custom)
 
-## Step 3
- * implement initWithCoder method
+### Step 3
+ *# implement initWithCoder method
 
 <pre><code>- (void) setup{
     NSString *nibName = NSStringFromClass([self class]);
@@ -41,7 +41,7 @@ Related Documents
 }
 </code></pre>
 
-## Step 4 (Optional)
+### Step 4 (Optional)
  * If you want to input your parameter at storyboard.
  * Drag a UIView to your storyboard.
  * Click it -> command + option + 3 -> input your Custom Class name
