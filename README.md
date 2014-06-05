@@ -45,7 +45,7 @@ Related Documents
  * If you want to input your parameter at storyboard.
  * Drag a UIView to your storyboard.
  * Click it -> command + option + 3 -> input your Custom Class name
- * find the "User denfined Runtime Attributes"
+ * Find the "User denfined Runtime Attributes"
 
 | Key Path     | Type         | Value  |
 | :------------ |:--------------|:-------|
