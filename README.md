@@ -3,7 +3,9 @@ CustomView
 
 IOS Custom View with xib(IOS 7 &amp; 8) and Live Render (IOS 8)
 
+### Quick Link
  * [Custom View With xib (IOS 7 &amp; 8)](#custom-view-with-xib-ios-7--8)
+ * [Live Render (IOS 8)](#live-render-ios-8-)
 
 # Custom View With xib (IOS 7 &amp; 8)
 
@@ -63,4 +65,4 @@ Related Documents
     labelTitle.text = vTitle;
 }</code></pre>
 
-# Live render (IOS 8 )
+# Live Render (IOS 8)
