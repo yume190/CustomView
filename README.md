@@ -23,23 +23,22 @@ Related Documents
 ## Step 3
  * implement initWithCoder method
 
-<pre><code>
-    - (void) setup{
-        NSString *nibName = NSStringFromClass([self class]);
-        UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
-        [nib instantiateWithOwner:self options:nil];
-        //Add the view loaded from the nib into self.
-        [self addSubview:self.view];
-    }
+<pre><code>- (void) setup{
+    NSString *nibName = NSStringFromClass([self class]);
+    UINib *nib = [UINib nibWithNibName:nibName bundle:nil];
+    [nib instantiateWithOwner:self options:nil];
+    //Add the view loaded from the nib into self.
+    [self addSubview:self.view];
+}
 
-    - (id)initWithCoder:(NSCoder *)aDecoder{
-        self = [super initWithCoder:aDecoder];
+- (id)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
 
-        if (self) {
-            [self setup];
-        }
-        return self;
+    if (self) {
+        [self setup];
     }
+    return self;
+}
 </code></pre>
 
 ## Step 4 (Optional)
@@ -52,15 +51,10 @@ Related Documents
 | :------------ |:--------------|:-------|
 |vTitle|String|the title|
  * Create a property in CustomView.h
-
-
-    @property (assign) NSString* vTitle;
+<pre><code>@property (assign) NSString* vTitle;</code></pre>
  * Implement awakeFromNib in Custom.m
-
-
-    - (void)awakeFromNib {
-        labelTitle.text = vTitle;
-    }
-
+<pre><code>- (void)awakeFromNib {
+    labelTitle.text = vTitle;
+}</code></pre>
 
 # Live render (IOS 8 )
