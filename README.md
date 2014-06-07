@@ -6,8 +6,15 @@ IOS Custom View with xib(IOS 7 &amp; 8) and Live Render (IOS 8)
 ### Quick Link
 
  * [Custom View With xib (IOS 7 &amp; 8)](#xib)
- * [Live Render Ver.Objetive-c (IOS 8)](#liveRenderObjc)
- * [Live Render Ver.Swift (IOS 8)](#liveRenderSwift)
+
+IOS Dev Library
+
+ * [Creating a Custom View that Renders in Interface Builder](https://developer.apple.com/library/prerelease/ios/recipes/xcode_help-IB_objects_media/CreatingaLiveViewofaCustomObject.html#//apple_ref/doc/uid/TP40014224-CH41-SW1)
+  * By using the IBInspectable attribute to declare variables as inspectable properties, you allow Interface Builder to quickly rerender your custom view as you change the values of these properties in the Attributes inspector. You can attach the IBInspectable attribute to any property in a class declaration, class extension, or category for any type that’s supported by Interface Builder’s defined runtime attributes: boolean, integer or floating point number, string, localized string, rectangle, point, size, color, range, and nil.
+  * If you need to create code for a custom view that runs only in Interface Builder, call that code from the method prepareForInterfaceBuilder. For example, while designing an app that uses the iPhone camera, you might want to draw an image that represents what the camera might capture. Although its compiled for runtime, code called from `prepareForInterfaceBuilder` never gets called except by Interface Builder at design time.
+  * You can use the preprocessor macro `TARGET_INTERFACE_BUILDER` to specify code for inclusion with or exclusion from your custom view class.
+  * [Live Render Ver.Objetive-c (IOS 8)](#liveRenderObjc)
+  * [Live Render Ver.Swift (IOS 8)](#liveRenderSwift)
 
 # <a name="xib"></a>Custom View With xib (IOS 7 &amp; 8)
 
@@ -28,7 +35,7 @@ Related Documents
  * Input your Custom Class name.(ex:Custom)
 
 ### Step 3
- * Implement initWithCoder method
+ * Implement `initWithCoder` method
 
 <pre><code>- (void) setup{
     NSString *nibName = NSStringFromClass([self class]);
@@ -62,7 +69,7 @@ Related Documents
 
 <pre><code>@property (assign) NSString* vTitle;</code></pre>
 
- * Implement awakeFromNib in CustomView.m
+ * Implement `awakeFromNib` in CustomView.m
 
 <pre><code>- (void)awakeFromNib {
     labelTitle.text = vTitle;
@@ -72,8 +79,8 @@ Related Documents
 
 Related Documents
 
- * [CustomViewObjetiveC.h](CustomViewObjc/CustomViewObjetiveC.h)
- * [CustomViewObjetiveC.m](CustomViewObjc/CustomViewObjetiveC.m)
+ * [CustomView.h](CustomViewObjc/CustomViewObjetiveC.h)
+ * [CustomView.m](CustomViewObjc/CustomViewObjetiveC.m)
 
 ### Step 1 <font color="red">__Very Important__</font>
  * Create a framework.
@@ -86,42 +93,49 @@ Related Documents
 ### Step 3
  * Add <font color="red">`IB_DESIGNABLE`</font> to your class
 
-<pre><code>#import <UIKit/UIKit.h>
-IB_DESIGNABLE
-@interface CustomViewObjetiveC : UIView
-@end
-</code></pre>
-
-注意：
-一定要建Framework
-只適用於以下幾種屬性boolean, integer or floating point number, string, localized string, rectangle, point, size, color, range, and nil
-最後一點待理解
-（If you need to create code for a custom view that runs only in Interface Builder, call that code from the method prepareForInterfaceBuilder. For example, while designing an app that uses the iPhone camera, you might want to draw an image that represents what the camera might capture. Although its compiled for runtime, code called from prepareForInterfaceBuilder never gets called except by Interface Builder at design time.
-You can use the preprocessor macro TARGET_INTERFACE_BUILDER to specify code for inclusion with or exclusion from your custom view class.）
-1.File > New > Target 創一個Framework
-2.(這個範例不是Swift,PS:還在try)
-3.加入IB_DESIGNABLE
+<pre><code>#import &lt;UIKit/UIKit.h&gt;
 IB_DESIGNABLE
 @interface YourCustomVIew : UIView
 @end
-4.創屬性(IBInspectable)
+</code></pre>
+
+### Step 4
+ * Add some property with __`IBInspectable`__
+
+<pre><code>#import &lt;UIKit/UIKit.h&gt;
+IB_DESIGNABLE
+@interface YourCustomVIew : UIView
 @property (nonatomic) IBInspectable NSInteger lineWidth;
 @property (nonatomic) IBInspectable UIColor *fillColor;
-5.實作drawRect
-- (void)drawRect:(CGRect)rect
+@property (nonatomic) IBInspectable UIColor *labelColor;
+@property (nonatomic) IBInspectable NSString *labelText;
+@property (nonatomic) IBInspectable CGRect labelRect;
+@end
+</code></pre>
+
+### Step 5
+ * Implement `drawRect` method
+
+<pre><code>- (void)drawRect:(CGRect)rect
 {
-// Drawing code
-CGContextRef context = UIGraphicsGetCurrentContext();
-CGRect myFrame = self.bounds;
-// Set the line width to 10 and inset the rectangle by
-// 5 pixels on all sides to compensate for the wider line.
-CGContextSetLineWidth(context, _lineWidth);
-CGRectInset(myFrame, 5, 5);
-[_fillColor set];
-UIRectFrame(myFrame);
+    UILabel *l =[[UILabel alloc] initWithFrame:_labelRect];
+    l.text = _labelText;
+    l.textColor = _labelColor;
+    [self addSubview:l];
+
+    // Drawing code
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGRect    myFrame = self.bounds;
+
+    // Set the line width to 10 and inset the rectangle by
+    // 5 pixels on all sides to compensate for the wider line.
+    CGContextSetLineWidth(context, _lineWidth);
+    CGRectInset(myFrame, 5, 5);
+
+    [_fillColor set];
+    UIRectFrame(myFrame);
 }
-取自：
-https://developer.apple.com/library/prerelease/ios/recipes/xcode_help-IB_objects_media/CreatingaLiveViewofaCustomObject.html#//apple_ref/doc/uid/TP40014224-CH41-SW1
+</code></pre>
 
 # <a name="liveRenderSwift"></a>Live Render Ver.Swift (IOS 8)
 
