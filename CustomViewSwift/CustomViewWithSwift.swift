@@ -13,7 +13,7 @@ class CustomViewWithSwift: UIView {
     @IBInspectable var lineWidth: NSInteger
     @IBInspectable var fillColor: UIColor
     @IBInspectable var labelColor: UIColor
-    @IBInspectable var labelText: NSString
+    @IBInspectable var labelText: NSString = ""
     @IBInspectable var labelRect: CGRect
     
     init(frame: CGRect) {
@@ -30,7 +30,7 @@ class CustomViewWithSwift: UIView {
         lineWidth = 0
         fillColor = UIColor.blackColor()
         labelColor = UIColor.blackColor()
-        labelText = NSString()
+//        labelText = NSString()
         labelRect = CGRect(x:0.0,y: 0.0,width: 200.0,height: 40.0)
         
         super.init(coder:coder)
