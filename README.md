@@ -1,7 +1,7 @@
 CustomView
 ==========
 
-<div style="color:red">Very Important</div>
+<span style="color:red">Very Important</span>
 
 IOS Custom View with xib(IOS 7 &amp; 8) and Live Render (IOS 8)
 
