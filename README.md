@@ -6,15 +6,16 @@ IOS Custom View with xib(IOS 7 &amp; 8) and Live Render (IOS 8)
 ### Quick Link
 
  * [Custom View With xib (IOS 7 &amp; 8)](#xib)
+ * [Live Render Ver.Objetive-c (IOS 8)](#liveRenderObjc)
+ * [Live Render Ver.Swift (IOS 8)](#liveRenderSwift)
 
-__Live Render(IOS Dev Library)__
+### __Live Render(IOS Dev Library)__
 
  * [Creating a Custom View that Renders in Interface Builder](https://developer.apple.com/library/prerelease/ios/recipes/xcode_help-IB_objects_media/CreatingaLiveViewofaCustomObject.html#//apple_ref/doc/uid/TP40014224-CH41-SW1)
   * By using the IBInspectable attribute to declare variables as inspectable properties, you allow Interface Builder to quickly rerender your custom view as you change the values of these properties in the Attributes inspector. You can attach the IBInspectable attribute to any property in a class declaration, class extension, or category for any type that’s supported by Interface Builder’s defined runtime attributes: __boolean, integer or floating point number, string, localized string, rectangle, point, size, color, range, and nil__.
   * If you need to create code for a custom view that runs only in Interface Builder, call that code from the method prepareForInterfaceBuilder. For example, while designing an app that uses the iPhone camera, you might want to draw an image that represents what the camera might capture. Although its compiled for runtime, code called from `prepareForInterfaceBuilder` never gets called except by Interface Builder at design time.
   * You can use the preprocessor macro `TARGET_INTERFACE_BUILDER` to specify code for inclusion with or exclusion from your custom view class.
-  * [Live Render Ver.Objetive-c (IOS 8)](#liveRenderObjc)
-  * [Live Render Ver.Swift (IOS 8)](#liveRenderSwift)
+  
 
 # <a name="xib"></a>Custom View With xib (IOS 7 &amp; 8)
 
@@ -35,7 +36,7 @@ Related Documents
  * Input your Custom Class name.(ex:Custom)
 
 ### Step 3
- * Implement `initWithCoder` method
+ * Implement `initWithCoder` method 
 
 <pre><code>- (void) setup{
     NSString *nibName = NSStringFromClass([self class]);
@@ -61,9 +62,9 @@ Related Documents
  * Click it -> command + option + 3 -> input your Custom Class name
  * Find the "User denfined Runtime Attributes"
 
-| Key Path     | Type         | Value  |
-| :------------ |:--------------|:-------|
-|vTitle|String|the title|
+| Key Path      | Type          | Value   |
+| :------------ |:--------------|:--------|
+|vTitle         |String         |the title|
 
  * Create a property in CustomView.h
 
@@ -113,7 +114,7 @@ IB_DESIGNABLE
 @end
 </code></pre>
 
-### Step 5
+### Step 5 (Branch 1)
  * Implement `drawRect` method
 
 <pre><code>- (void)drawRect:(CGRect)rect
@@ -134,6 +135,78 @@ IB_DESIGNABLE
 
     [_fillColor set];
     UIRectFrame(myFrame);
+}
+</code></pre>
+
+### Step 5 (Branch 2)
+
+ * Implement `initWithCoder` method &amp; `initWithFrame` method
+
+<pre><code>@interface CustomViewObjetiveC(){
+    dispatch_once_t onceTokenViewLiveRendering;
+}
+@property (nonatomic,strong) UILabel *label;
+@end
+
+@implementation CustomViewObjetiveC
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
+    
+    if (self) {
+        [self setup];
+    }
+    return self;
+}
+
+-(void)setup{
+    _label = [UILabel new];
+    [self addSubview:_label];
+    self.backgroundColor = [UIColor whiteColor];
+}
+@end
+</code></pre>
+
+### Step 6 (Branch 2)
+
+ * implement live render methods(`prepareForInterfaceBuilder` &amp; `drawRect`)
+
+PS : some strange with live render methods.(I will explain at [Debug Selected Views](#debugSelectedViews))
+
+<pre><code>-(void)prepareForInterfaceBuilder{
+    [self viewLiveRendering];
+}
+
+- (void)drawRect:(CGRect)rect{
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGRect    myFrame = self.bounds;
+    
+    CGContextSetLineWidth(context, _lineWidth);
+    CGRectInset(myFrame, 5, 5);
+    
+    [_fillColor set];
+    UIRectFrame(myFrame);
+    
+#ifndef TARGET_INTERFACE_BUILDER
+    [self viewLiveRendering];
+#endif
+}
+
+-(void)viewLiveRendering{
+    dispatch_once(&onceTokenViewLiveRendering, ^{
+        _label.frame = _labelRect;
+        _label.text = _labelText;
+        _label.textColor = _labelColor;
+    });
 }
 </code></pre>
 
@@ -193,3 +266,13 @@ class CustomViewWithSwift: UIView {
     addSubview(l)
 }
 </code></pre>
+
+# <a name="debugSelectedViews"></a>Debug Selected Views
+
+![Imgae 1](images/i1.png)
+
+| Key Path      | Type          | Value   |
+| :------------ |:--------------|:--------|
+|vTitle         |String         |the title|
+![Imgae 2](images/i2.png)
+![Imgae 3](images/i3.png)
