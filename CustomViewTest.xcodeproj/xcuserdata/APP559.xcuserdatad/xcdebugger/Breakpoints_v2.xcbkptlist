@@ -10,13 +10,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CustomViewObjc/CustomViewObjetiveC.m"
-            timestampString = "425206790.152945"
+            timestampString = "425267628.251262"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "@interface CustomViewObjetiveC()"
-            landmarkType = "2">
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-drawRect:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -31,8 +31,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
             endingLineNumber = "28"
-            landmarkName = "@interface CustomViewObjetiveC()"
-            landmarkType = "2">
+            landmarkName = "-initWithFrame:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -47,8 +47,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "@property (nonatomic,strong) UILabel *label @end @implementation CustomViewObjetiveC - (instancetype)initWithCoder:(NSCoder *)aDecoder{ self = [super initWithCoder:aDecoder];"
-            landmarkType = "19">
+            landmarkName = "-initWithCoder:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CustomViewObjc/CustomViewObjetiveC.m"
-            timestampString = "425206790.152945"
+            timestampString = "425267628.251262"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93">
+            startingLineNumber = "90"
+            endingLineNumber = "90">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -104,13 +104,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CustomViewObjc/CustomViewObjetiveC.m"
-            timestampString = "425205867.736797"
+            timestampString = "425267628.251262"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "@interface CustomViewObjetiveC()"
-            landmarkType = "2">
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "-prepareForInterfaceBuilder"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

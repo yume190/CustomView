@@ -269,10 +269,12 @@ class CustomViewWithSwift: UIView {
 
 # <a name="debugSelectedViews"></a>Debug Selected Views
 
+ * You must click target view and you can find this future below
+
 ![Imgae 1](images/i1.png)
 
-| Key Path      | Type          | Value   |
-| :------------ |:--------------|:--------|
-|vTitle         |String         |the title|
+|        | APP running          | `Debug Selected Views`<br />(`Live Rendering`)  |
+| :------------ |:--------------:|:--------:|
+|path         |         |`initWithFrame`<br />|<br />▼|
 ![Imgae 2](images/i2.png)
 ![Imgae 3](images/i3.png)
