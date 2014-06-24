@@ -8,6 +8,8 @@ IOS Custom View with xib(IOS 7 &amp; 8) and Live Render (IOS 8)
  * [Custom View With xib (IOS 7 &amp; 8)](#xib)
  * [Live Render Ver.Objetive-c (IOS 8)](#liveRenderObjc)
  * [Live Render Ver.Swift (IOS 8)](#liveRenderSwift)
+ * [Debug Selected Views](#debugSelectedViews)
+ * [Debug View Hierarchy](#debugViewHierarchy)
 
 ### __Live Render(IOS Dev Library)__
 
@@ -186,16 +188,7 @@ PS : some strange with live render methods.(I will explain at [Debug Selected Vi
     [self viewLiveRendering];
 }
 
-- (void)drawRect:(CGRect)rect{
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGRect    myFrame = self.bounds;
-    
-    CGContextSetLineWidth(context, _lineWidth);
-    CGRectInset(myFrame, 5, 5);
-    
-    [_fillColor set];
-    UIRectFrame(myFrame);
-    
+- (void)drawRect:(CGRect)rect{ 
 #ifndef TARGET_INTERFACE_BUILDER
     [self viewLiveRendering];
 #endif
@@ -273,8 +266,16 @@ class CustomViewWithSwift: UIView {
 
 ![Imgae 1](images/i1.png)
 
-|        | APP running          | `Debug Selected Views`<br />(`Live Rendering`)  |
-| :------------ |:--------------:|:--------:|
-|path         |         |`initWithFrame`<br />|<br />▼|
+|               | APP running          | `Debug Selected Views`<br />(`Live Rendering`)  |
+| :------------ |:--------------------:|:-----------------------------------------------:|
+|path           |`initWithCoder:`<br />┋<br />┋<br />┋<br />┋<br />⬇︎<br />`drawRect:`|`initWithFrame:`<br />.<br />▼<br />`prepareForInterfaceBuilder`<br />.<br />▼<br />`drawRect:`|
+
+# <a name="debugViewHierarchy"></a>Debug View Hierarchy
+
+ * This future must running your APP, and you can find if at below.
+
 ![Imgae 2](images/i2.png)
+
+or
+
 ![Imgae 3](images/i3.png)

@@ -21,11 +21,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    v = [[CustomViewObjetiveC alloc]initWithFrame:CGRectMake(0, 0, 320, 160)];
-    v.label.frame = CGRectMake(10, 10, 50, 50);
-    v.label.text = @"ttasdfttt";
-    v.label.textColor = [UIColor purpleColor];
-    [self.view addSubview:v];
+//    v = [[CustomViewObjetiveC alloc]initWithFrame:CGRectMake(0, 0, 320, 160)];
+//    v.label.frame = CGRectMake(10, 10, 50, 50);
+//    v.label.text = @"ttasdfttt";
+//    v.label.textColor = [UIColor purpleColor];
+//    [self.view addSubview:v];
 }
 
 -(void)viewDidLayoutSubviews{
