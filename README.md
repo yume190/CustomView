@@ -10,6 +10,7 @@ IOS Custom View with xib(IOS 7 &amp; 8) and Live Render (IOS 8)
  * [Live Render Ver.Swift (IOS 8)](#liveRenderSwift)
  * [Debug Selected Views](#debugSelectedViews)
  * [Debug View Hierarchy](#debugViewHierarchy)
+ * Swift live render(use didset)[How to make awesome UI components in iOS 8 using Swift and XCode 6](http://www.weheartswift.com/make-awesome-ui-components-ios-8-using-swift-xcode-6/)
 
 ### __Live Render(IOS Dev Library)__
 
