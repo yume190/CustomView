@@ -1,0 +1,23 @@
+//
+//  CustomViewObjc-Prefix.pch
+//  CustomViewTest
+//
+//  Created by APP559 on 2014/7/28.
+//  Copyright (c) 2014年 yume. All rights reserved.
+//
+
+#ifndef CustomViewTest_CustomViewObjc_Prefix_pch
+#define CustomViewTest_CustomViewObjc_Prefix_pch
+
+// IOS 7 Compliant
+// source : http://www.merowing.info/2014/06/behaviours-and-xcode-6/#.U7-hI9OSzEQ
+#ifndef IBInspectable
+#define IBInspectable
+#endif
+#ifndef IB_DESIGNABLE
+#define IB_DESIGNABLE
+#endif
+
+#define ViewSourceInstance                  [ViewSource sharedInstance]
+
+#endif

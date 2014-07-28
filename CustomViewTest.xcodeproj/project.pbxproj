@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D7E46731985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D7E46711985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.h */; };
+		4D7E46741985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7E46721985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.m */; };
+		4D7E46761985E85D00C9EDFF /* CustomWithXibLiveRenderKVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D7E46751985E85D00C9EDFF /* CustomWithXibLiveRenderKVC.xib */; };
+		4D7E467A1985ED2A00C9EDFF /* ViewSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D7E46781985ED2A00C9EDFF /* ViewSource.h */; };
+		4D7E467B1985ED2A00C9EDFF /* ViewSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7E46791985ED2A00C9EDFF /* ViewSource.m */; };
 		4D8B2A931910E7AE0023EA7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8B2A921910E7AE0023EA7F /* Foundation.framework */; };
 		4D8B2A951910E7AE0023EA7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8B2A941910E7AE0023EA7F /* CoreGraphics.framework */; };
 		4D8B2A971910E7AE0023EA7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8B2A961910E7AE0023EA7F /* UIKit.framework */; };
@@ -29,8 +34,6 @@
 		A87CF6B1193DC5B5006BF9ED /* CustomViewSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87CF69C193DC5B5006BF9ED /* CustomViewSwift.framework */; };
 		A87CF6B2193DC5B5006BF9ED /* CustomViewSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A87CF69C193DC5B5006BF9ED /* CustomViewSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A87CF6C4193DC5E1006BF9ED /* CustomViewWithSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87CF6C3193DC5E1006BF9ED /* CustomViewWithSwift.swift */; };
-		A87CF6CA193DDDA3006BF9ED /* yumeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A87CF6C8193DDDA3006BF9ED /* yumeTestViewController.m */; };
-		A87CF6CB193DDDA3006BF9ED /* yumeTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A87CF6C9193DDDA3006BF9ED /* yumeTestViewController.xib */; };
 		A8D5CE73193D9FF600D3A3E2 /* CustomViewObjc.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D5CE72193D9FF600D3A3E2 /* CustomViewObjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8D5CE79193D9FF700D3A3E2 /* CustomViewObjc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D5CE6E193D9FF600D3A3E2 /* CustomViewObjc.framework */; };
 		A8D5CE80193D9FF700D3A3E2 /* CustomViewObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D5CE7F193D9FF700D3A3E2 /* CustomViewObjcTests.m */; };
@@ -152,6 +155,12 @@
 
 /* Begin PBXFileReference section */
 		4D2B7DA0194026E0001106A6 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		4D7E46711985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWithXibLiveRenderKVC.h; sourceTree = "<group>"; };
+		4D7E46721985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWithXibLiveRenderKVC.m; sourceTree = "<group>"; };
+		4D7E46751985E85D00C9EDFF /* CustomWithXibLiveRenderKVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomWithXibLiveRenderKVC.xib; sourceTree = "<group>"; };
+		4D7E46771985E90100C9EDFF /* CustomViewObjc-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomViewObjc-Prefix.pch"; sourceTree = "<group>"; };
+		4D7E46781985ED2A00C9EDFF /* ViewSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewSource.h; sourceTree = "<group>"; };
+		4D7E46791985ED2A00C9EDFF /* ViewSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewSource.m; sourceTree = "<group>"; };
 		4D8B2A8F1910E7AE0023EA7F /* CustomViewTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomViewTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D8B2A921910E7AE0023EA7F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4D8B2A941910E7AE0023EA7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -183,9 +192,6 @@
 		A87CF6AC193DC5B5006BF9ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A87CF6AD193DC5B5006BF9ED /* CustomViewSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewSwiftTests.swift; sourceTree = "<group>"; };
 		A87CF6C3193DC5E1006BF9ED /* CustomViewWithSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewWithSwift.swift; sourceTree = "<group>"; };
-		A87CF6C7193DDDA3006BF9ED /* yumeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yumeTestViewController.h; sourceTree = "<group>"; };
-		A87CF6C8193DDDA3006BF9ED /* yumeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yumeTestViewController.m; sourceTree = "<group>"; };
-		A87CF6C9193DDDA3006BF9ED /* yumeTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = yumeTestViewController.xib; sourceTree = "<group>"; };
 		A8D5CE6E193D9FF600D3A3E2 /* CustomViewObjc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomViewObjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D5CE71193D9FF600D3A3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8D5CE72193D9FF600D3A3E2 /* CustomViewObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewObjc.h; sourceTree = "<group>"; };
@@ -308,9 +314,6 @@
 				4D8B2A991910E7AE0023EA7F /* Supporting Files */,
 				A8D5CE96193DB40A00D3A3E2 /* Custom.h */,
 				A8D5CE97193DB40A00D3A3E2 /* Custom.m */,
-				A87CF6C7193DDDA3006BF9ED /* yumeTestViewController.h */,
-				A87CF6C8193DDDA3006BF9ED /* yumeTestViewController.m */,
-				A87CF6C9193DDDA3006BF9ED /* yumeTestViewController.xib */,
 			);
 			path = CustomViewTest;
 			sourceTree = "<group>";
@@ -386,6 +389,11 @@
 				A8D5CE70193D9FF600D3A3E2 /* Supporting Files */,
 				A8D5CE92193DA08900D3A3E2 /* CustomViewObjetiveC.h */,
 				A8D5CE93193DA08900D3A3E2 /* CustomViewObjetiveC.m */,
+				4D7E46711985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.h */,
+				4D7E46721985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.m */,
+				4D7E46751985E85D00C9EDFF /* CustomWithXibLiveRenderKVC.xib */,
+				4D7E46781985ED2A00C9EDFF /* ViewSource.h */,
+				4D7E46791985ED2A00C9EDFF /* ViewSource.m */,
 			);
 			path = CustomViewObjc;
 			sourceTree = "<group>";
@@ -394,6 +402,7 @@
 			isa = PBXGroup;
 			children = (
 				A8D5CE71193D9FF600D3A3E2 /* Info.plist */,
+				4D7E46771985E90100C9EDFF /* CustomViewObjc-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -430,7 +439,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D7E46731985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.h in Headers */,
 				A8D5CE94193DA08900D3A3E2 /* CustomViewObjetiveC.h in Headers */,
+				4D7E467A1985ED2A00C9EDFF /* ViewSource.h in Headers */,
 				A8D5CE73193D9FF600D3A3E2 /* CustomViewObjc.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,7 +625,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A87CF6CB193DDDA3006BF9ED /* yumeTestViewController.xib in Resources */,
 				4D8B2AAB1910E7AE0023EA7F /* Images.xcassets in Resources */,
 				4D8B2A9D1910E7AE0023EA7F /* InfoPlist.strings in Resources */,
 				4D8B2AD31910F3080023EA7F /* TemplateView1.xib in Resources */,
@@ -648,6 +658,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D7E46761985E85D00C9EDFF /* CustomWithXibLiveRenderKVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,7 +680,6 @@
 				4D8B2A9F1910E7AE0023EA7F /* main.m in Sources */,
 				4D8B2AC91910E7C60023EA7F /* TemplateView1.m in Sources */,
 				4D8B2AA91910E7AE0023EA7F /* yumeViewController.m in Sources */,
-				A87CF6CA193DDDA3006BF9ED /* yumeTestViewController.m in Sources */,
 				A8D5CE98193DB40A00D3A3E2 /* Custom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -702,7 +712,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D7E467B1985ED2A00C9EDFF /* ViewSource.m in Sources */,
 				A8D5CE95193DA08900D3A3E2 /* CustomViewObjetiveC.m in Sources */,
+				4D7E46741985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1054,6 +1066,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomViewObjc/CustomViewObjc-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1081,6 +1096,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CustomViewObjc/CustomViewObjc-Prefix.pch";
 				INFOPLIST_FILE = CustomViewObjc/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

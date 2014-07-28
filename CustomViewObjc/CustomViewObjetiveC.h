@@ -10,22 +10,10 @@
 IB_DESIGNABLE
 @interface CustomViewObjetiveC : UIView
 
-// source : http://www.merowing.info/2014/06/behaviours-and-xcode-6/#.U7-hI9OSzEQ
-#ifndef IBInspectable
-    #define IBInspectable
-#endif
 @property (nonatomic) IBInspectable NSInteger lineWidth;
 @property (nonatomic) IBInspectable UIColor *fillColor;
 @property (nonatomic) IBInspectable UIColor *labelColor;
 @property (nonatomic) IBInspectable NSString *labelText;
 @property (nonatomic) IBInspectable CGRect labelRect;
 
-
-// #ifdef IBInspectable
-// @property (nonatomic) IBInspectable NSInteger lineWidth;
-// @property (nonatomic) IBInspectable UIColor *fillColor;
-// @property (nonatomic) IBInspectable UIColor *labelColor;
-// @property (nonatomic) IBInspectable NSString *labelText;
-// @property (nonatomic) IBInspectable CGRect labelRect;
-// #endif
 @end
