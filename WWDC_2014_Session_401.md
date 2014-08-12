@@ -10,10 +10,6 @@ WWDC 2014 Session 401
 
 ![Imgae 1](images/i1.png)
 
-|               | APP running          | Diff| `Debug Selected Views`<br />(`Live Rendering`)  |Function|
-| :------------ |:--------------------:|:---:|:-----------------------------------------------:|:------:|
-|path           |`initWithCoder:`<br />┋<br />┋<br />┋<br />┋<br />⬇︎<br />`drawRect:`|≠<br /><br /><br /><<br /><br /><br />=|`initWithFrame:`<br />┋<br />⬇︎<br />`prepareForInterfaceBuilder`<br />┋<br />⬇︎<br />`drawRect:`|init method<br /><br /><br />Live Render 1<br /><br /><br />Live Render 2|
-
 # <a name="debugViewHierarchy"></a>Debug View Hierarchy
 
  * This future must running your APP, and you can find it at below.
