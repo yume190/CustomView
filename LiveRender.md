@@ -1,6 +1,5 @@
-__Live Render(IOS Dev Library)__
---------------
-
+Live Render(IOS Dev Library)
+==========
 
  * [Creating a Custom View that Renders in Interface Builder](https://developer.apple.com/library/prerelease/ios/recipes/xcode_help-IB_objects_media/CreatingaLiveViewofaCustomObject.html#//apple_ref/doc/uid/TP40014224-CH41-SW1)
   * By using the IBInspectable attribute to declare variables as inspectable properties, you allow Interface Builder to quickly rerender your custom view as you change the values of these properties in the Attributes inspector. You can attach the IBInspectable attribute to any property in a class declaration, class extension, or category for any type that’s supported by Interface Builder’s defined runtime attributes: __boolean, integer or floating point number, string, localized string, rectangle, point, size, color, range, and nil__.
