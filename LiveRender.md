@@ -200,6 +200,6 @@ class CustomViewWithSwift: UIView {
 
 # <a name="liveRenderFlow"></a> Live Render Flow
 
-|               | APP running          | Diff| `Debug Selected Views`<br />(`Live Rendering`)  |Function|
-| :------------ |:--------------------:|:---:|:-----------------------------------------------:|:------:|
-|path           |`initWithCoder:`<br />┋<br />┋<br />┋<br />┋<br />⬇︎<br />`drawRect:`|≠<br /><br /><br /><<br /><br /><br />=|`initWithFrame:`<br />┋<br />⬇︎<br />`prepareForInterfaceBuilder`<br />┋<br />⬇︎<br />`drawRect:`|init method<br /><br /><br />Live Render 1<br /><br /><br />Live Render 2|
+|               | APP running          | `Debug Selected Views`<br />(`Live Rendering`)  |Function|
+| :------------ |:--------------------:|:-----------------------------------------------:|:------:|
+|path           |`initWithCoder:`<br />┋<br />┋<br />┋<br />┋<br />⬇︎<br />`drawRect:`|`initWithFrame:`<br />┋<br />⬇︎<br />`prepareForInterfaceBuilder`<br />┋<br />⬇︎<br />`drawRect:`|init method<br /><br /><br />Live Render 1<br /><br /><br />Live Render 2|
