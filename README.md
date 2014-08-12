@@ -5,6 +5,7 @@ IOS Custom View with xib(IOS 7 &amp; 8) and Live Render (IOS 8)
 
  * [Custom View With xib (IOS 7 &amp; 8)](CustomView.md)
  * [Live Render (IOS 8)](LiveRender.md)
+ * [Key Value Coding](KVC.md)
  * [Debug Selected Views](#debugSelectedViews)
  * [Debug View Hierarchy](#debugViewHierarchy)
 
