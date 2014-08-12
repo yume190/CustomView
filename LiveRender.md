@@ -118,7 +118,7 @@ IB_DESIGNABLE
 
  * implement live render methods(`prepareForInterfaceBuilder` &amp; `drawRect`)
 
-PS : some strange with live render methods.(I will explain at [Debug Selected Views](#debugSelectedViews))
+PS : some strange with live render methods.(I will explain at [Live Render Flow](#liveRenderFlow))
 
 <pre><code>-(void)prepareForInterfaceBuilder{
     [self viewLiveRendering];
@@ -197,6 +197,8 @@ class CustomViewWithSwift: UIView {
     addSubview(l)
 }
 </code></pre>
+
+# <a name="liveRenderFlow"></a> Live Render Flow
 
 |               | APP running          | Diff| `Debug Selected Views`<br />(`Live Rendering`)  |Function|
 | :------------ |:--------------------:|:---:|:-----------------------------------------------:|:------:|
