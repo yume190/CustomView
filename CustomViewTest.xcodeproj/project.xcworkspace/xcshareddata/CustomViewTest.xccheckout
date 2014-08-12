@@ -12,22 +12,34 @@
 	<dict>
 		<key>21FEF971-D14E-4B98-8AD4-3C2AB88509DF</key>
 		<string>https://github.com/yume190/CustomView.git</string>
+		<key>A6B33965A226072ACF430000273A167720004DF5</key>
+		<string>https://github.com/yume190/CustomView.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>CustomViewTest.xcodeproj/project.xcworkspace</string>
+	<string>CustomViewTest.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>21FEF971-D14E-4B98-8AD4-3C2AB88509DF</key>
+		<string>../..Test2</string>
+		<key>A6B33965A226072ACF430000273A167720004DF5</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/yume190/CustomView.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>21FEF971-D14E-4B98-8AD4-3C2AB88509DF</string>
+	<string>A6B33965A226072ACF430000273A167720004DF5</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A6B33965A226072ACF430000273A167720004DF5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CustomView</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
