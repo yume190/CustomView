@@ -7,11 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-IB_DESIGNABLE
-@interface CustomWithXibLiveRenderKVC : UIView
-@property (nonatomic) IBInspectable float borderLineWidth;
-@property (nonatomic) IBInspectable float borderRadius;
-@property (nonatomic) IBInspectable UIColor *borderColor;
+#import "CustomViewTemplate.h"
 
-@property (nonatomic) IBInspectable NSString *viewSourceKeyPath;
+IB_DESIGNABLE
+@interface CustomWithXibLiveRenderKVC : CustomViewTemplate
 @end

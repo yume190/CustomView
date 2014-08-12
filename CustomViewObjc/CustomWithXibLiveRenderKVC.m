@@ -19,90 +19,25 @@
 
 @implementation CustomWithXibLiveRenderKVC
 
-- (instancetype)initWithCoder:(NSCoder *)aDecoder{
-    self = [super initWithCoder:aDecoder];
-    
-    if (self) {
-        [self setup];
-    }
-    return self;
-}
-
-- (instancetype)initWithFrame:(CGRect)frame{
-    self = [super initWithFrame:frame];
-    
-    if (self) {
-        [self setup];
-    }
-    return self;
-}
-
 -(void)setup{
-    NSString *nibName = NSStringFromClass([self class]);
-    
-    //Bundle Identifier can be find at Target -> Your Framework -> Bundle Identifier
-    NSBundle *frameworkBundle = [NSBundle bundleWithIdentifier:@"com.yume190.CustomViewObjc"];
-    
-    UINib *nib = [UINib nibWithNibName:nibName bundle:frameworkBundle];
-    
-    [nib instantiateWithOwner:self options:nil];
-    //Add the view loaded from the nib into self.
+    [super setup];
     [self addSubview:self.view];
 }
 
-
--(void)prepareForInterfaceBuilder{
-    [self viewLiveRendering];
-}
-
-
-- (void)drawRect:(CGRect)rect{
-#ifndef TARGET_INTERFACE_BUILDER
-    [self viewLiveRendering];
-#endif
-    
-    self.layer.borderColor = _borderColor.CGColor;
-    self.layer.borderWidth = _borderLineWidth;
-    
-    if( [self.layer respondsToSelector:@selector(setCornerRadius:)] )
-        [self.layer setCornerRadius:_borderRadius];
-}
-
 -(void)viewLiveRendering{
+    [super viewLiveRendering];
     self.view.backgroundColor = [UIColor clearColor];
-    
-    [self processViewSource];
-    
-    [self processFuture];
 }
 
 -(void)processViewSource{
-    if (_viewSourceKeyPath) {
-        NSDictionary *dict =  [ViewSourceInstance valueForKey:_viewSourceKeyPath];
-        
-        NSString *type = dict[@"type"];
-        NSString *className = NSStringFromClass([self class]);
-        
-        if ([className isEqualToString:type]) {
-            _labelLeft.text = dict[@"labelLeft"];
-            _labelRight.text = dict[@"labelRight"];
-            [_buttonLeft setTitle:dict[@"buttonLeft"] forState:UIControlStateNormal];
-            [_buttonRight setTitle:dict[@"buttonRight"] forState:UIControlStateNormal];
-        }
-        
-    }
+    _labelLeft.text = self.viewSourceDictionary[@"labelLeft"];
+    _labelRight.text = self.viewSourceDictionary[@"labelRight"];
+    [_buttonLeft setTitle:self.viewSourceDictionary[@"buttonLeft"] forState:UIControlStateNormal];
+    [_buttonRight setTitle:self.viewSourceDictionary[@"buttonRight"] forState:UIControlStateNormal];
 }
 
--(void)processFuture{
-
-}
-
-#pragma mark - Custom Quick Look
-
-// OS Types Supporting debugQuickLookObject :
-//      https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/CustomClassDisplay_in_QuickLook/CH02-std_objects_support/CH02-std_objects_support.html#//apple_ref/doc/uid/TP40014001-CH3-SW1
--(id)debugQuickLookObject{
-    return self;
-}
+//-(void)processFuture{
+//
+//}
 
 @end

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D5851F51999E69100627BBF /* CustomViewTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5851F41999E69100627BBF /* CustomViewTemplate.swift */; };
+		4D5851F71999E6D200627BBF /* ViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5851F61999E6D200627BBF /* ViewSource.swift */; };
+		4D5852001999E79400627BBF /* CustomViewTemplate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D5851FE1999E79400627BBF /* CustomViewTemplate.h */; };
+		4D5852011999E79400627BBF /* CustomViewTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5851FF1999E79400627BBF /* CustomViewTemplate.m */; };
 		4D7E46731985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D7E46711985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.h */; };
 		4D7E46741985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7E46721985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.m */; };
 		4D7E46761985E85D00C9EDFF /* CustomWithXibLiveRenderKVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D7E46751985E85D00C9EDFF /* CustomWithXibLiveRenderKVC.xib */; };
@@ -155,6 +159,10 @@
 
 /* Begin PBXFileReference section */
 		4D2B7DA0194026E0001106A6 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		4D5851F41999E69100627BBF /* CustomViewTemplate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewTemplate.swift; sourceTree = "<group>"; };
+		4D5851F61999E6D200627BBF /* ViewSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSource.swift; sourceTree = "<group>"; };
+		4D5851FE1999E79400627BBF /* CustomViewTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomViewTemplate.h; sourceTree = "<group>"; };
+		4D5851FF1999E79400627BBF /* CustomViewTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomViewTemplate.m; sourceTree = "<group>"; };
 		4D7E46711985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWithXibLiveRenderKVC.h; sourceTree = "<group>"; };
 		4D7E46721985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWithXibLiveRenderKVC.m; sourceTree = "<group>"; };
 		4D7E46751985E85D00C9EDFF /* CustomWithXibLiveRenderKVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomWithXibLiveRenderKVC.xib; sourceTree = "<group>"; };
@@ -353,6 +361,8 @@
 				A87CF6A0193DC5B5006BF9ED /* CustomViewSwift.h */,
 				A87CF69E193DC5B5006BF9ED /* Supporting Files */,
 				A87CF6C3193DC5E1006BF9ED /* CustomViewWithSwift.swift */,
+				4D5851F41999E69100627BBF /* CustomViewTemplate.swift */,
+				4D5851F61999E6D200627BBF /* ViewSource.swift */,
 			);
 			path = CustomViewSwift;
 			sourceTree = "<group>";
@@ -389,6 +399,8 @@
 				A8D5CE70193D9FF600D3A3E2 /* Supporting Files */,
 				A8D5CE92193DA08900D3A3E2 /* CustomViewObjetiveC.h */,
 				A8D5CE93193DA08900D3A3E2 /* CustomViewObjetiveC.m */,
+				4D5851FE1999E79400627BBF /* CustomViewTemplate.h */,
+				4D5851FF1999E79400627BBF /* CustomViewTemplate.m */,
 				4D7E46711985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.h */,
 				4D7E46721985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.m */,
 				4D7E46751985E85D00C9EDFF /* CustomWithXibLiveRenderKVC.xib */,
@@ -441,6 +453,7 @@
 			files = (
 				4D7E46731985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.h in Headers */,
 				A8D5CE94193DA08900D3A3E2 /* CustomViewObjetiveC.h in Headers */,
+				4D5852001999E79400627BBF /* CustomViewTemplate.h in Headers */,
 				4D7E467A1985ED2A00C9EDFF /* ViewSource.h in Headers */,
 				A8D5CE73193D9FF600D3A3E2 /* CustomViewObjc.h in Headers */,
 			);
@@ -697,6 +710,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A87CF6C4193DC5E1006BF9ED /* CustomViewWithSwift.swift in Sources */,
+				4D5851F71999E6D200627BBF /* ViewSource.swift in Sources */,
+				4D5851F51999E69100627BBF /* CustomViewTemplate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,6 +728,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D7E467B1985ED2A00C9EDFF /* ViewSource.m in Sources */,
+				4D5852011999E79400627BBF /* CustomViewTemplate.m in Sources */,
 				A8D5CE95193DA08900D3A3E2 /* CustomViewObjetiveC.m in Sources */,
 				4D7E46741985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.m in Sources */,
 			);
