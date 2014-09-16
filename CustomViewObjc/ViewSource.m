@@ -8,6 +8,12 @@
 
 #import "ViewSource.h"
 
+@interface ViewSource (){
+    NSString *abc;
+}
+
+@end
+
 @implementation ViewSource
 
 +(ViewSource*) sharedInstance{
@@ -23,7 +29,7 @@
 
 -(NSDictionary*)test1{
     return @{@"type":@"CustomWithXibLiveRenderKVC",
-             @"labelLeft":@"l",
+             @"labelLeft":@"strong",
              @"labelRight":@"r",
              @"buttonLeft":@"ll",
              @"buttonRight":@"rr"};

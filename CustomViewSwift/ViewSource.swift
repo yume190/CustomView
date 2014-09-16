@@ -43,4 +43,10 @@ class ViewSource: NSObject {
             "buttonTitle":"Push def!!"]
     }
     
+    func SwiftKVC() -> NSDictionary{
+        return ["type":"LiveRenderKVC",
+                "labelLeft":"lllll",
+                "labelRight":"rr"]
+    }
+    
 }
