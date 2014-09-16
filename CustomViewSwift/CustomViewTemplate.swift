@@ -60,23 +60,23 @@ class CustomViewTemplate: UIView ,CustomViewTemplateProtocol{
     }
     
     func setup() {
-        instantiateWithXib()
+        //instantiateWithXib()
     }
     
     var token: dispatch_once_t = 0
     
     override func prepareForInterfaceBuilder() {
-        super.prepareForInterfaceBuilder()
-        dispatch_once(&token) {
+//        super.prepareForInterfaceBuilder()
+//        dispatch_once(&token) {
             self.viewLiveRendering()
-        }
+//        }
     }
     
     override func drawRect(rect: CGRect) {
-        super.drawRect(rect)
-        dispatch_once(&token) {
+//        super.drawRect(rect)
+//        dispatch_once(&token) {
             self.viewLiveRendering()
-        }
+//        }
     }
     
     func viewLiveRendering() {
@@ -117,7 +117,7 @@ class CustomViewTemplate: UIView ,CustomViewTemplateProtocol{
     }
     
     func bundleIdentifier() -> String{
-        return "com.yume190.YumeKit"
+        return "com.yume190.CustomViewSwift"
     }
     
     func className() -> String{
