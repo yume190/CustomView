@@ -2,11 +2,7 @@ Key Value Coding
 ======
 
  * My blog(Ver. Chinese)
-     * [IOS KVC 筆記](http://yume190.github.io/blog/2014/07/09/ios-kvc-bi-ji/)
-     * [IOS KVC 問題集](http://yume190.github.io/blog/2014/07/10/ios-kvc-wen-ti-ji/)
-     * [IOS KVC兼容](http://yume190.github.io/blog/2014/07/11/ios-kvcjian-rong/)
-     * [IOS KVC搜尋順序](http://yume190.github.io/blog/2014/07/11/ios-kvcsou-xun-shun-xu/)
-     * [IOS KVC Custom Collection Operator](http://yume190.github.io/blog/2014/07/28/ios-kvc-custom-collection-operator/)
+     * [IOS KVC](http://yume190.github.io/categories/IOS/KVC/)
 
  * IOS Dev Lib
 
