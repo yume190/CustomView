@@ -13,7 +13,6 @@ protocol CustomViewTemplateProtocol{
     func viewLiveRendering()
     
     func processViewSource()
-    //    func processStoryBoardSource()
     func processFuture()
     
     func className() -> String
@@ -22,6 +21,7 @@ protocol CustomViewTemplateProtocol{
 protocol CustomViewProtocol:CustomViewTemplateProtocol{
     func instantiateWithXib()
     func bundleIdentifier() -> String
+    func frameworkBundle() -> NSBundle
 }
 
 @IBDesignable
@@ -29,7 +29,6 @@ class CustomViewTemplate: UIView ,CustomViewTemplateProtocol{
     
     @IBInspectable var viewSourceKeyPath:String?
     @IBInspectable var viewSourceDictionary:NSDictionary?
-    //    @IBInspectable var viewSourceDictionary:[String:AnyObject]?
     
     @IBInspectable var borderLineWidth: CGFloat = 0 {
         willSet{
@@ -59,24 +58,16 @@ class CustomViewTemplate: UIView ,CustomViewTemplateProtocol{
         setup()
     }
     
-    func setup() {
-        //instantiateWithXib()
-    }
+    func setup() {}
     
     var token: dispatch_once_t = 0
     
     override func prepareForInterfaceBuilder() {
-//        super.prepareForInterfaceBuilder()
-//        dispatch_once(&token) {
-            self.viewLiveRendering()
-//        }
+        self.viewLiveRendering()
     }
     
     override func drawRect(rect: CGRect) {
-//        super.drawRect(rect)
-//        dispatch_once(&token) {
-            self.viewLiveRendering()
-//        }
+        self.viewLiveRendering()
     }
     
     func viewLiveRendering() {
@@ -92,28 +83,25 @@ class CustomViewTemplate: UIView ,CustomViewTemplateProtocol{
             }
         }
         
-//        if respondsToSelector(Selector("processStoryBoardSource")){
-//            processStoryBoardSource()
-//        }
-        
         if respondsToSelector(Selector("processFuture")){
             processFuture()
         }
     }
     
     func processViewSource() {}
-    func processStoryBoardSource() {}
     func processFuture() {}
     
     func instantiateWithXib(){
-//        var nibName1:NSString = NSStringFromClass(self.dynamicType)
-//        var nibName2:NSString = NSStringFromClass(self.classForKeyedArchiver)
         
-        var bundle:NSBundle = NSBundle(identifier: bundleIdentifier())
+        var bundle:NSBundle = frameworkBundle()
         
         var nib:UINib = UINib(nibName: className(), bundle: bundle)
         
         nib.instantiateWithOwner(self, options: nil)
+    }
+    
+    func frameworkBundle() -> NSBundle{
+        return NSBundle(identifier: bundleIdentifier())
     }
     
     func bundleIdentifier() -> String{
