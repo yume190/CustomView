@@ -36,8 +36,4 @@
     [_buttonRight setTitle:self.viewSourceDictionary[@"buttonRight"] forState:UIControlStateNormal];
 }
 
-//-(void)processFuture{
-//
-//}
-
 @end
