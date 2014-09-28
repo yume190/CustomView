@@ -30,7 +30,6 @@ class CustomViewWithSwift: UIView {
         lineWidth = 0
         fillColor = UIColor.blackColor()
         labelColor = UIColor.blackColor()
-//        labelText = NSString()
         labelRect = CGRect(x:0.0,y: 0.0,width: 200.0,height: 40.0)
         
         super.init(coder:coder)
@@ -46,8 +45,6 @@ class CustomViewWithSwift: UIView {
         l.text = labelText
         l.frame = labelRect
         l.textColor = labelColor
-//        l.backgroundColor = labelColor
         addSubview(l)
-//        l.drawRect(labelRect)
     }
 }
