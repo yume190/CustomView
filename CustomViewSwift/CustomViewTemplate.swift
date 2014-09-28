@@ -60,8 +60,6 @@ class CustomViewTemplate: UIView ,CustomViewTemplateProtocol{
     
     func setup() {}
     
-    var token: dispatch_once_t = 0
-    
     override func prepareForInterfaceBuilder() {
         self.viewLiveRendering()
     }
@@ -105,6 +103,7 @@ class CustomViewTemplate: UIView ,CustomViewTemplateProtocol{
     }
     
     func bundleIdentifier() -> String{
+        //Bundle Identifier can be find at Target -> Your Framework -> Bundle Identifier
         return "com.yume190.CustomViewSwift"
     }
     

@@ -37,11 +37,6 @@
     [nib instantiateWithOwner:self options:nil];
 }
 
-- (NSBundle *)frameworkBundle{
-    //Bundle Identifier can be find at Target -> Your Framework -> Bundle Identifier
-    return [NSBundle bundleWithIdentifier:@"com.yume190.CustomViewObjc"];
-}
-
 -(void)prepareForInterfaceBuilder{
     [self viewLiveRendering];
 }
@@ -82,6 +77,15 @@
         [self processFuture];
     }
     
+}
+
+- (NSBundle *)frameworkBundle{
+    return [NSBundle bundleWithIdentifier:[self bundleIdentifier]];
+}
+
+- (NSString *)bundleIdentifier{
+    //Bundle Identifier can be find at Target -> Your Framework -> Bundle Identifier
+    return @"com.yume190.CustomViewObjc";
 }
 
 -(id)debugQuickLookObject{
