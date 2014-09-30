@@ -1,5 +1,7 @@
 # <a name="xib"></a>Custom View With xib (IOS 7 &amp; 8)
 
+中文版：[IOS Custom View Part 1](http://yume190.github.io/2014/09/26/IOS-Custom-View-Part-1/)
+
 Related Documents
 
  * [CustomView.h](CustomViewTest/TemplateView1.h)
@@ -42,6 +44,9 @@ Related Documents
  * Drag a UIView to your storyboard.
  * Click it -> command + option + 3 -> input your Custom Class name
  * Find the "User denfined Runtime Attributes"
+ * enter the parameter you want
+
+ex: String vTitle = "the title"
 
 | Key Path      | Type          | Value   |
 | :------------ |:--------------|:--------|
