@@ -20,4 +20,23 @@
 
 #define ViewSourceInstance                  [ViewSource sharedInstance]
 
+#define TRAIT_COLLECTION_DISPLAY_SCALE(scale) [UITraitCollection traitCollectionWithDisplayScale:scale]
+#define TRAIT_COLLECTION_DISPLAY_SCALE_1 TRAIT_COLLECTION_DISPLAY_SCALE(1)
+#define TRAIT_COLLECTION_DISPLAY_SCALE_2 TRAIT_COLLECTION_DISPLAY_SCALE(2)
+#define TRAIT_COLLECTION_DISPLAY_SCALE_3 TRAIT_COLLECTION_DISPLAY_SCALE(3)
+
+#define TRAIT_COLLECTION_IDIOM_UNSPECIFIED  [UITraitCollection traitCollectionWithUserInterfaceIdiom:UIUserInterfaceIdiomUnspecified]
+#define TRAIT_COLLECTION_IDIOM_PHONE        [UITraitCollection traitCollectionWithUserInterfaceIdiom:UIUserInterfaceIdiomPhone]
+#define TRAIT_COLLECTION_IDIOM_PAD          [UITraitCollection traitCollectionWithUserInterfaceIdiom:UIUserInterfaceIdiomPad]
+
+#define TRAIT_COLLECTION_WIDTH_ANY          [UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassUnspecified]
+#define TRAIT_COLLECTION_WIDTH_COMPACT      [UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassCompact]
+#define TRAIT_COLLECTION_WIDTH_REGULAR      [UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassRegular]
+
+#define TRAIT_COLLECTION_HEIGHT_ANY         [UITraitCollection traitCollectionWithVerticalSizeClass:UIUserInterfaceSizeClassUnspecified]
+#define TRAIT_COLLECTION_HEIGHT_COMPACT     [UITraitCollection traitCollectionWithVerticalSizeClass:UIUserInterfaceSizeClassCompact]
+#define TRAIT_COLLECTION_HEIGHT_REGULAR     [UITraitCollection traitCollectionWithVerticalSizeClass:UIUserInterfaceSizeClassRegular]
+
+#define TRAIT_COLLECTIONS(collections)      [UITraitCollection traitCollectionWithTraitsFromCollections:collections]
+
 #endif
