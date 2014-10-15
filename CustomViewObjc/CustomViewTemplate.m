@@ -16,6 +16,16 @@
     
     if (self) {
         [self setup];
+//        self.translatesAutoresizingMaskIntoConstraints = NO;
+//        Update Constraints
+//        Can add custom view constraints here via updateConstraints
+//        • Trigger via
+//        setNeedsUpdateConstraints
+        
+//        Laying Out Views
+//        Can be triggered via setNeedsLayout
+//        • Force instant-refresh via
+//        layoutIfNeeded
     }
     return self;
 }
@@ -38,11 +48,16 @@
 }
 
 -(void)prepareForInterfaceBuilder{
+    [super prepareForInterfaceBuilder];
     [self viewLiveRendering];
 }
 
 
 - (void)drawRect:(CGRect)rect{
+    [super drawRect:rect];
+//    [self setNeedsUpdateConstraints];
+//    [self layoutIfNeeded];
+//    [self setNeedsLayout];
 #ifndef TARGET_INTERFACE_BUILDER
     [self viewLiveRendering];
 #endif
