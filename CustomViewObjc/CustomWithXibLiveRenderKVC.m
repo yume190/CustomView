@@ -19,8 +19,21 @@
 
 @implementation CustomWithXibLiveRenderKVC
 
+-(void)updateConstraints{
+    NSDictionary *views = @{ @"view" : self.view };
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[view]-0-|" options:0 metrics:nil views:views]];
+    [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[view]-0-|" options:0 metrics:nil views:views]];
+    [super updateConstraints];
+}
+
+//-(void)layoutSubviews{
+//    [super layoutSubviews];
+//
+//}
+
 -(void)setup{
     [super setup];
+    self.view.translatesAutoresizingMaskIntoConstraints = NO;
     [self addSubview:self.view];
 }
 
