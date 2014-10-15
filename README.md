@@ -11,3 +11,12 @@ IOS Custom View with xib(IOS 7 &amp; 8) and Live Render (IOS 8)
     * [Debug Selected Views](WWDC_2014_Session_401.md/#debugSelectedViews)
     * [Debug View Hierarchy](WWDC_2014_Session_401.md/#debugViewHierarchy)
 
+---
+
+[Custom view : five square video](https://www.youtube.com/watch?v=eGLmXXHi3as)
+
+I can't find the bug that in iphone 6+ landscape currently, `[self traitCollection]` return  CC(compact width and compact height).
+
+[Custom view : five square video2 (same code, different project)](http://youtu.be/4pfZzuq-TOU)
+
+this video with the same code, but at the different project, when iphone 6+ landscape get the compact height regular width :)
