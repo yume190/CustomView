@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomViewTemplate.h"
 
-@interface FiveSquare : UIView
+IB_DESIGNABLE
+@interface FiveSquare : CustomViewTemplate
 
 @end
