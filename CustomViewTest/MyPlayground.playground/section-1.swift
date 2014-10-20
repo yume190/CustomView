@@ -233,4 +233,22 @@ let ace = Rank.Ace
 ace.simpleDescription()
 //let aceRawValue = ace.toRaw()
 
+#if os(iOS)
+    var image: UIImage?
+#elseif os(OSX)
+    var image: NSImage?
+#endif
 
+//OS()：OSX, iOS
+
+//arch()：x86_64, arm, arm64, i386
+
+let os = NSProcessInfo().operatingSystemVersion
+switch (os.majorVersion, os.minorVersion, os.patchVersion) {
+case (8, _, _):
+    println("iOS >= 8.0.0")
+case (7, 0, _):
+    println("iOS >= 7.0.0, = 7.1.0, < 8.0.0")
+default:
+    println("iOS = 8.0")
+}

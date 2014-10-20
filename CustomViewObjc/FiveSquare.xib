@@ -61,6 +61,50 @@
                 <constraint firstItem="zqc-YU-c1y" firstAttribute="trailing" secondItem="ee1-b4-UyL" secondAttribute="centerX" id="wfM-Rx-JGf"/>
                 <constraint firstAttribute="trailing" secondItem="9X4-Qo-qHO" secondAttribute="trailing" id="ygR-RU-2AS"/>
             </constraints>
+            <variation key="heightClass=compact-widthClass=compact">
+                <mask key="subviews">
+                    <exclude reference="amO-cK-xQs"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="6RC-Sn-4wA"/>
+                    <exclude reference="oLj-ha-FpZ"/>
+                    <exclude reference="4YW-OG-xQo"/>
+                    <exclude reference="qXu-Ka-w7o"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=regular">
+                <mask key="subviews">
+                    <exclude reference="UYA-zd-i0g"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="IRr-zu-5Ki"/>
+                    <exclude reference="cYA-wG-Xcp"/>
+                    <exclude reference="5xK-2Y-H9N"/>
+                    <exclude reference="GXM-cr-Htz"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <exclude reference="zqc-YU-c1y"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="EgN-xi-VQx"/>
+                    <exclude reference="LtV-ht-kNh"/>
+                    <exclude reference="aig-83-qAi"/>
+                    <exclude reference="wfM-Rx-JGf"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="subviews">
+                    <exclude reference="9X4-Qo-qHO"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="9yZ-Ti-7t4"/>
+                    <exclude reference="R6E-wF-VOS"/>
+                    <exclude reference="eql-XZ-1uT"/>
+                    <exclude reference="ygR-RU-2AS"/>
+                </mask>
+            </variation>
         </view>
     </objects>
 </document>

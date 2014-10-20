@@ -16,9 +16,6 @@
 		4D7E46761985E85D00C9EDFF /* CustomWithXibLiveRenderKVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D7E46751985E85D00C9EDFF /* CustomWithXibLiveRenderKVC.xib */; };
 		4D7E467A1985ED2A00C9EDFF /* ViewSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D7E46781985ED2A00C9EDFF /* ViewSource.h */; };
 		4D7E467B1985ED2A00C9EDFF /* ViewSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7E46791985ED2A00C9EDFF /* ViewSource.m */; };
-		4D8B2A931910E7AE0023EA7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8B2A921910E7AE0023EA7F /* Foundation.framework */; };
-		4D8B2A951910E7AE0023EA7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8B2A941910E7AE0023EA7F /* CoreGraphics.framework */; };
-		4D8B2A971910E7AE0023EA7F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8B2A961910E7AE0023EA7F /* UIKit.framework */; };
 		4D8B2A9D1910E7AE0023EA7F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4D8B2A9B1910E7AE0023EA7F /* InfoPlist.strings */; };
 		4D8B2A9F1910E7AE0023EA7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B2A9E1910E7AE0023EA7F /* main.m */; };
 		4D8B2AA31910E7AE0023EA7F /* yumeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D8B2AA21910E7AE0023EA7F /* yumeAppDelegate.m */; };
@@ -46,6 +43,7 @@
 		A87CF6B1193DC5B5006BF9ED /* CustomViewSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87CF69C193DC5B5006BF9ED /* CustomViewSwift.framework */; };
 		A87CF6B2193DC5B5006BF9ED /* CustomViewSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A87CF69C193DC5B5006BF9ED /* CustomViewSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		A87CF6C4193DC5E1006BF9ED /* CustomViewWithSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87CF6C3193DC5E1006BF9ED /* CustomViewWithSwift.swift */; };
+		A8C8BAF819F545E300FBD33E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8C8BAF719F545E300FBD33E /* LaunchScreen.xib */; };
 		A8D5CE73193D9FF600D3A3E2 /* CustomViewObjc.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D5CE72193D9FF600D3A3E2 /* CustomViewObjc.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8D5CE79193D9FF700D3A3E2 /* CustomViewObjc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D5CE6E193D9FF600D3A3E2 /* CustomViewObjc.framework */; };
 		A8D5CE80193D9FF700D3A3E2 /* CustomViewObjcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D5CE7F193D9FF700D3A3E2 /* CustomViewObjcTests.m */; };
@@ -216,6 +214,7 @@
 		A87CF6AC193DC5B5006BF9ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A87CF6AD193DC5B5006BF9ED /* CustomViewSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewSwiftTests.swift; sourceTree = "<group>"; };
 		A87CF6C3193DC5E1006BF9ED /* CustomViewWithSwift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewWithSwift.swift; sourceTree = "<group>"; };
+		A8C8BAF719F545E300FBD33E /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		A8D5CE6E193D9FF600D3A3E2 /* CustomViewObjc.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomViewObjc.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8D5CE71193D9FF600D3A3E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8D5CE72193D9FF600D3A3E2 /* CustomViewObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewObjc.h; sourceTree = "<group>"; };
@@ -234,10 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8D5CE83193D9FF700D3A3E2 /* CustomViewObjc.framework in Frameworks */,
-				4D8B2A951910E7AE0023EA7F /* CoreGraphics.framework in Frameworks */,
-				4D8B2A971910E7AE0023EA7F /* UIKit.framework in Frameworks */,
 				A87CF6B1193DC5B5006BF9ED /* CustomViewSwift.framework in Frameworks */,
-				4D8B2A931910E7AE0023EA7F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +330,7 @@
 				4D8B2AA71910E7AE0023EA7F /* yumeViewController.h */,
 				4D8B2AA81910E7AE0023EA7F /* yumeViewController.m */,
 				4D8B2AA41910E7AE0023EA7F /* Main.storyboard */,
+				A8C8BAF719F545E300FBD33E /* LaunchScreen.xib */,
 				4D8B2AAA1910E7AE0023EA7F /* Images.xcassets */,
 				4D8B2A991910E7AE0023EA7F /* Supporting Files */,
 				A8D5CE96193DB40A00D3A3E2 /* Custom.h */,
@@ -616,9 +613,6 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = yume;
 				TargetAttributes = {
-					4D8B2A8E1910E7AE0023EA7F = {
-						DevelopmentTeam = Z8GB3T9CQ4;
-					};
 					4D8B2AAF1910E7AE0023EA7F = {
 						TestTargetID = 4D8B2A8E1910E7AE0023EA7F;
 					};
@@ -667,6 +661,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8C8BAF819F545E300FBD33E /* LaunchScreen.xib in Resources */,
 				4D8B2AAB1910E7AE0023EA7F /* Images.xcassets in Resources */,
 				4D8B2A9D1910E7AE0023EA7F /* InfoPlist.strings in Resources */,
 				4D8B2AD31910F3080023EA7F /* TemplateView1.xib in Resources */,
@@ -954,6 +949,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomViewTest/CustomViewTest-Prefix.pch";
 				INFOPLIST_FILE = "CustomViewTest/CustomViewTest-Info.plist";
@@ -969,6 +965,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomViewTest/CustomViewTest-Prefix.pch";
 				INFOPLIST_FILE = "CustomViewTest/CustomViewTest-Info.plist";
