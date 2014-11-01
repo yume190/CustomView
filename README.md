@@ -14,8 +14,11 @@ IOS Custom View with xib(IOS 7 &amp; 8) and Live Render (IOS 8)
 ---
 
 [Custom view : five square video](https://www.youtube.com/watch?v=eGLmXXHi3as)
+
 `[self traitCollection]` return  CC(compact width and compact height).
+
 PS:This problem solve by add a `launch screen`
 
 [Custom view : five square video2 (same code, different project)](http://youtu.be/4pfZzuq-TOU)
+
 this video with the same code, but at the different project, when iphone 6+ landscape get the compact height regular width :)
