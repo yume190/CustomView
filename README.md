@@ -26,4 +26,4 @@ Potrait
 <iframe src="https://appetize.io/embed/tok_e2hf4we9r4q8tpu6x4hxv3xdrr?device=iphone&orientation=portrait&scale=100" width="378px" height="800px" frameborder="0" scrolling="no"></iframe>
 
 Landscape
-<iframe src="https://appetize.io/embed/tok_e2hf4we9r4q8tpu6x4hxv3xdrr?device=iphone&orientation=landscape&scale=100" width="800px" height="378px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://appetize.io/embed/6qg2ekzjq8z291050dym533wmg" width="800px" height="378px" frameborder="0" scrolling="no"></iframe>
