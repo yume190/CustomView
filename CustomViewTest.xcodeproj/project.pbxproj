@@ -31,12 +31,10 @@
 		4D8B2AD31910F3080023EA7F /* TemplateView1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D8B2AD21910F3080023EA7F /* TemplateView1.xib */; };
 		A854471519C1CA0A00669522 /* LiveRenderKVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A854471419C1CA0A00669522 /* LiveRenderKVC.swift */; };
 		A854471719C1CB5600669522 /* LiveRenderKVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = A854471619C1CB5600669522 /* LiveRenderKVC.xib */; };
-		A860F42519E5842000D141BE /* FourSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = A860F42219E5842000D141BE /* FourSquare.h */; };
-		A860F42619E5842000D141BE /* FourSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = A860F42319E5842000D141BE /* FourSquare.m */; };
-		A860F42719E5842000D141BE /* FourSquare.xib in Resources */ = {isa = PBXBuildFile; fileRef = A860F42419E5842000D141BE /* FourSquare.xib */; };
 		A860F42919E586A400D141BE /* FiveSquare.xib in Resources */ = {isa = PBXBuildFile; fileRef = A860F42819E586A400D141BE /* FiveSquare.xib */; };
 		A860F42C19E586B300D141BE /* FiveSquare.h in Headers */ = {isa = PBXBuildFile; fileRef = A860F42A19E586B300D141BE /* FiveSquare.h */; };
 		A860F42D19E586B300D141BE /* FiveSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = A860F42B19E586B300D141BE /* FiveSquare.m */; };
+		A86FCB731AA6B4E500DC6151 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86FCB721AA6B4E500DC6151 /* StringExtension.swift */; };
 		A87CF6A1193DC5B5006BF9ED /* CustomViewSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = A87CF6A0193DC5B5006BF9ED /* CustomViewSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A87CF6A7193DC5B5006BF9ED /* CustomViewSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A87CF69C193DC5B5006BF9ED /* CustomViewSwift.framework */; };
 		A87CF6AE193DC5B5006BF9ED /* CustomViewSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87CF6AD193DC5B5006BF9ED /* CustomViewSwiftTests.swift */; };
@@ -201,12 +199,10 @@
 		4DFF62EC193F15C400B21093 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		A854471419C1CA0A00669522 /* LiveRenderKVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRenderKVC.swift; sourceTree = "<group>"; };
 		A854471619C1CB5600669522 /* LiveRenderKVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LiveRenderKVC.xib; sourceTree = "<group>"; };
-		A860F42219E5842000D141BE /* FourSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourSquare.h; sourceTree = "<group>"; };
-		A860F42319E5842000D141BE /* FourSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourSquare.m; sourceTree = "<group>"; };
-		A860F42419E5842000D141BE /* FourSquare.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FourSquare.xib; sourceTree = "<group>"; };
 		A860F42819E586A400D141BE /* FiveSquare.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FiveSquare.xib; sourceTree = "<group>"; };
 		A860F42A19E586B300D141BE /* FiveSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FiveSquare.h; sourceTree = "<group>"; };
 		A860F42B19E586B300D141BE /* FiveSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FiveSquare.m; sourceTree = "<group>"; };
+		A86FCB721AA6B4E500DC6151 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		A87CF69C193DC5B5006BF9ED /* CustomViewSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomViewSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A87CF69F193DC5B5006BF9ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A87CF6A0193DC5B5006BF9ED /* CustomViewSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewSwift.h; sourceTree = "<group>"; };
@@ -321,9 +317,7 @@
 		4D8B2A981910E7AE0023EA7F /* CustomViewTest */ = {
 			isa = PBXGroup;
 			children = (
-				4D8B2AC71910E7C60023EA7F /* TemplateView1.h */,
-				4D8B2AC81910E7C60023EA7F /* TemplateView1.m */,
-				4D8B2AD21910F3080023EA7F /* TemplateView1.xib */,
+				A8043E7D1AB4885900F09A7C /* Sample 1 Start with xib */,
 				4D2B7DA0194026E0001106A6 /* MyPlayground.playground */,
 				4D8B2AA11910E7AE0023EA7F /* yumeAppDelegate.h */,
 				4D8B2AA21910E7AE0023EA7F /* yumeAppDelegate.m */,
@@ -368,16 +362,99 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A8043E7D1AB4885900F09A7C /* Sample 1 Start with xib */ = {
+			isa = PBXGroup;
+			children = (
+				4D8B2AD21910F3080023EA7F /* TemplateView1.xib */,
+				4D8B2AC71910E7C60023EA7F /* TemplateView1.h */,
+				4D8B2AC81910E7C60023EA7F /* TemplateView1.m */,
+			);
+			name = "Sample 1 Start with xib";
+			sourceTree = "<group>";
+		};
+		A8043E7E1AB488C100F09A7C /* Sample 2 Live Render */ = {
+			isa = PBXGroup;
+			children = (
+				A8D5CE92193DA08900D3A3E2 /* CustomViewObjetiveC.h */,
+				A8D5CE93193DA08900D3A3E2 /* CustomViewObjetiveC.m */,
+			);
+			name = "Sample 2 Live Render";
+			sourceTree = "<group>";
+		};
+		A8043E7F1AB488F300F09A7C /* Sample 2 Live Render Swift */ = {
+			isa = PBXGroup;
+			children = (
+				A87CF6C3193DC5E1006BF9ED /* CustomViewWithSwift.swift */,
+			);
+			name = "Sample 2 Live Render Swift";
+			sourceTree = "<group>";
+		};
+		A8043E801AB48A7800F09A7C /* Sample 3 xib + Live Render + KVC */ = {
+			isa = PBXGroup;
+			children = (
+				4D7E46711985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.h */,
+				4D7E46721985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.m */,
+				4D7E46751985E85D00C9EDFF /* CustomWithXibLiveRenderKVC.xib */,
+			);
+			name = "Sample 3 xib + Live Render + KVC";
+			sourceTree = "<group>";
+		};
+		A8043E811AB48B2F00F09A7C /* YumeKit */ = {
+			isa = PBXGroup;
+			children = (
+				4D5851FE1999E79400627BBF /* CustomViewTemplate.h */,
+				4D5851FF1999E79400627BBF /* CustomViewTemplate.m */,
+				4D7E46781985ED2A00C9EDFF /* ViewSource.h */,
+				4D7E46791985ED2A00C9EDFF /* ViewSource.m */,
+			);
+			name = YumeKit;
+			sourceTree = "<group>";
+		};
+		A8043E821AB48B5C00F09A7C /* Example xib + Autolayout + Size Class */ = {
+			isa = PBXGroup;
+			children = (
+				A860F42A19E586B300D141BE /* FiveSquare.h */,
+				A860F42B19E586B300D141BE /* FiveSquare.m */,
+				A860F42819E586A400D141BE /* FiveSquare.xib */,
+			);
+			name = "Example xib + Autolayout + Size Class";
+			sourceTree = "<group>";
+		};
+		A8043E831AB48BC000F09A7C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A86FCB721AA6B4E500DC6151 /* StringExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		A8043E841AB48BD200F09A7C /* YumeKit */ = {
+			isa = PBXGroup;
+			children = (
+				4D5851F41999E69100627BBF /* CustomViewTemplate.swift */,
+				4D5851F61999E6D200627BBF /* ViewSource.swift */,
+			);
+			name = YumeKit;
+			sourceTree = "<group>";
+		};
+		A8043E851AB48BEB00F09A7C /* Sample 3 xib + Live Render + KVC */ = {
+			isa = PBXGroup;
+			children = (
+				A854471419C1CA0A00669522 /* LiveRenderKVC.swift */,
+				A854471619C1CB5600669522 /* LiveRenderKVC.xib */,
+			);
+			name = "Sample 3 xib + Live Render + KVC";
+			sourceTree = "<group>";
+		};
 		A87CF69D193DC5B5006BF9ED /* CustomViewSwift */ = {
 			isa = PBXGroup;
 			children = (
-				A87CF6A0193DC5B5006BF9ED /* CustomViewSwift.h */,
+				A8043E7F1AB488F300F09A7C /* Sample 2 Live Render Swift */,
+				A8043E851AB48BEB00F09A7C /* Sample 3 xib + Live Render + KVC */,
+				A8043E841AB48BD200F09A7C /* YumeKit */,
+				A8043E831AB48BC000F09A7C /* Extension */,
 				A87CF69E193DC5B5006BF9ED /* Supporting Files */,
-				A87CF6C3193DC5E1006BF9ED /* CustomViewWithSwift.swift */,
-				4D5851F41999E69100627BBF /* CustomViewTemplate.swift */,
-				A854471419C1CA0A00669522 /* LiveRenderKVC.swift */,
-				A854471619C1CB5600669522 /* LiveRenderKVC.xib */,
-				4D5851F61999E6D200627BBF /* ViewSource.swift */,
+				A87CF6A0193DC5B5006BF9ED /* CustomViewSwift.h */,
 			);
 			path = CustomViewSwift;
 			sourceTree = "<group>";
@@ -410,23 +487,12 @@
 		A8D5CE6F193D9FF600D3A3E2 /* CustomViewObjc */ = {
 			isa = PBXGroup;
 			children = (
-				A8D5CE72193D9FF600D3A3E2 /* CustomViewObjc.h */,
+				A8043E7E1AB488C100F09A7C /* Sample 2 Live Render */,
+				A8043E801AB48A7800F09A7C /* Sample 3 xib + Live Render + KVC */,
+				A8043E821AB48B5C00F09A7C /* Example xib + Autolayout + Size Class */,
+				A8043E811AB48B2F00F09A7C /* YumeKit */,
 				A8D5CE70193D9FF600D3A3E2 /* Supporting Files */,
-				A8D5CE92193DA08900D3A3E2 /* CustomViewObjetiveC.h */,
-				A8D5CE93193DA08900D3A3E2 /* CustomViewObjetiveC.m */,
-				4D5851FE1999E79400627BBF /* CustomViewTemplate.h */,
-				4D5851FF1999E79400627BBF /* CustomViewTemplate.m */,
-				4D7E46711985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.h */,
-				4D7E46721985E84E00C9EDFF /* CustomWithXibLiveRenderKVC.m */,
-				4D7E46751985E85D00C9EDFF /* CustomWithXibLiveRenderKVC.xib */,
-				4D7E46781985ED2A00C9EDFF /* ViewSource.h */,
-				4D7E46791985ED2A00C9EDFF /* ViewSource.m */,
-				A860F42219E5842000D141BE /* FourSquare.h */,
-				A860F42319E5842000D141BE /* FourSquare.m */,
-				A860F42419E5842000D141BE /* FourSquare.xib */,
-				A860F42A19E586B300D141BE /* FiveSquare.h */,
-				A860F42B19E586B300D141BE /* FiveSquare.m */,
-				A860F42819E586A400D141BE /* FiveSquare.xib */,
+				A8D5CE72193D9FF600D3A3E2 /* CustomViewObjc.h */,
 			);
 			path = CustomViewObjc;
 			sourceTree = "<group>";
@@ -476,7 +542,6 @@
 				A8D5CE94193DA08900D3A3E2 /* CustomViewObjetiveC.h in Headers */,
 				4D5852001999E79400627BBF /* CustomViewTemplate.h in Headers */,
 				A860F42C19E586B300D141BE /* FiveSquare.h in Headers */,
-				A860F42519E5842000D141BE /* FourSquare.h in Headers */,
 				4D7E467A1985ED2A00C9EDFF /* ViewSource.h in Headers */,
 				A8D5CE73193D9FF600D3A3E2 /* CustomViewObjc.h in Headers */,
 			);
@@ -696,7 +761,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A860F42719E5842000D141BE /* FourSquare.xib in Resources */,
 				A860F42919E586A400D141BE /* FiveSquare.xib in Resources */,
 				4D7E46761985E85D00C9EDFF /* CustomWithXibLiveRenderKVC.xib in Resources */,
 			);
@@ -738,6 +802,7 @@
 			files = (
 				A87CF6C4193DC5E1006BF9ED /* CustomViewWithSwift.swift in Sources */,
 				4D5851F71999E6D200627BBF /* ViewSource.swift in Sources */,
+				A86FCB731AA6B4E500DC6151 /* StringExtension.swift in Sources */,
 				A854471519C1CA0A00669522 /* LiveRenderKVC.swift in Sources */,
 				4D5851F51999E69100627BBF /* CustomViewTemplate.swift in Sources */,
 			);
@@ -755,7 +820,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A860F42619E5842000D141BE /* FourSquare.m in Sources */,
 				4D7E467B1985ED2A00C9EDFF /* ViewSource.m in Sources */,
 				4D5852011999E79400627BBF /* CustomViewTemplate.m in Sources */,
 				A8D5CE95193DA08900D3A3E2 /* CustomViewObjetiveC.m in Sources */,
@@ -949,12 +1013,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomViewTest/CustomViewTest-Prefix.pch";
 				INFOPLIST_FILE = "CustomViewTest/CustomViewTest-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -965,6 +1031,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CustomViewTest/CustomViewTest-Prefix.pch";
