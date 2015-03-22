@@ -49,7 +49,7 @@ extension CustomViewLight{
 
 Override `setup` method and add your custom code
 
-``` swift CV1.swift
+```
 import UIKit
 import CustomView
 
@@ -73,7 +73,7 @@ Create swift file and xib file with same name
  * CV2.swift
  * CV2.xib
 
-``` swift CV2.swift
+```
 import UIKit
 import CustomView
 
