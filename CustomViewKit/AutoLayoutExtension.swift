@@ -9,10 +9,10 @@
 import UIKit
 
 public struct LayoutAttribute {
-    var view:UIView?
-    var attribute:NSLayoutAttribute
-    var multiplier:CGFloat
-    var constant:CGFloat
+    public var view:UIView?
+    public var attribute:NSLayoutAttribute
+    public var multiplier:CGFloat
+    public var constant:CGFloat
     
     init(view:UIView, attribute: NSLayoutAttribute, constant:CGFloat = 0, multiplier:CGFloat = 1.0){
         self.view = view;
@@ -65,7 +65,7 @@ public extension UIView {
     
 }
 
-func == (left: LayoutAttribute, right: LayoutAttribute) -> NSLayoutConstraint {
+public func == (left: LayoutAttribute, right: LayoutAttribute) -> NSLayoutConstraint {
     var layoutConstraint = NSLayoutConstraint(item:left.view!,
         attribute: left.attribute, relatedBy: NSLayoutRelation.Equal, toItem: right.view,
         attribute: right.attribute, multiplier: right.multiplier, constant: right.constant)
@@ -73,21 +73,21 @@ func == (left: LayoutAttribute, right: LayoutAttribute) -> NSLayoutConstraint {
     return layoutConstraint
 }
 
-func >= (left: LayoutAttribute, right: LayoutAttribute) -> NSLayoutConstraint {
+public func >= (left: LayoutAttribute, right: LayoutAttribute) -> NSLayoutConstraint {
     var layoutConstraint = NSLayoutConstraint(item: left.view!,
         attribute: left.attribute, relatedBy: NSLayoutRelation.GreaterThanOrEqual, toItem: right.view, attribute: right.attribute,
         multiplier: right.multiplier, constant: right.constant);
     return layoutConstraint
 }
 
-func <= (left: LayoutAttribute, right: LayoutAttribute) -> NSLayoutConstraint {
+public func <= (left: LayoutAttribute, right: LayoutAttribute) -> NSLayoutConstraint {
     var layoutConstraint = NSLayoutConstraint(item: left.view!,
         attribute: left.attribute, relatedBy: NSLayoutRelation.LessThanOrEqual, toItem: right.view, attribute: right.attribute,
         multiplier: right.multiplier, constant: right.constant);
     return layoutConstraint
 }
 
-func == (left: LayoutAttribute, right: CGFloat) -> NSLayoutConstraint {
+public func == (left: LayoutAttribute, right: CGFloat) -> NSLayoutConstraint {
     var layoutConstraint = NSLayoutConstraint(item:left.view!,
         attribute: left.attribute, relatedBy: NSLayoutRelation.Equal, toItem: nil,
         attribute: .NotAnAttribute, multiplier: 1.0, constant: right)
@@ -95,7 +95,7 @@ func == (left: LayoutAttribute, right: CGFloat) -> NSLayoutConstraint {
     return layoutConstraint
 }
 
-func <= (left: LayoutAttribute, right: CGFloat) -> NSLayoutConstraint {
+public func <= (left: LayoutAttribute, right: CGFloat) -> NSLayoutConstraint {
     var layoutConstraint = NSLayoutConstraint(item:left.view!,
         attribute: left.attribute, relatedBy: NSLayoutRelation.LessThanOrEqual, toItem: nil,
         attribute: .NotAnAttribute, multiplier: 1.0, constant: right)
@@ -103,7 +103,7 @@ func <= (left: LayoutAttribute, right: CGFloat) -> NSLayoutConstraint {
     return layoutConstraint
 }
 
-func >= (left: LayoutAttribute, right: CGFloat) -> NSLayoutConstraint {
+public func >= (left: LayoutAttribute, right: CGFloat) -> NSLayoutConstraint {
     var layoutConstraint = NSLayoutConstraint(item:left.view!,
         attribute: left.attribute, relatedBy: NSLayoutRelation.GreaterThanOrEqual, toItem: nil,
         attribute: .NotAnAttribute, multiplier: 1.0, constant: right)
@@ -118,22 +118,22 @@ infix operator *+ {
     precedence 150
 }
 
-func *+(left: LayoutAttribute, right: (multiplier:CGFloat, contant:CGFloat)) -> LayoutAttribute {
+public func *+(left: LayoutAttribute, right: (multiplier:CGFloat, contant:CGFloat)) -> LayoutAttribute {
     var layoutAttribute = LayoutAttribute(view:left.view!, attribute: left.attribute, constant: right.contant, multiplier:right.multiplier)
     return layoutAttribute
 }
 
-func *(left: LayoutAttribute, right: CGFloat) -> LayoutAttribute {
+public func *(left: LayoutAttribute, right: CGFloat) -> LayoutAttribute {
     var layoutAttribute = LayoutAttribute(view:left.view!, attribute: left.attribute, constant: 0, multiplier:right)
     return layoutAttribute
 }
 
-func +(left: LayoutAttribute, right: CGFloat) -> LayoutAttribute {
+public func +(left: LayoutAttribute, right: CGFloat) -> LayoutAttribute {
     var layoutAttribute = LayoutAttribute(view:left.view!, attribute: left.attribute, constant: right, multiplier:left.multiplier)
     return layoutAttribute
 }
 
-func -(left: LayoutAttribute, right: CGFloat) -> LayoutAttribute {
+public func -(left: LayoutAttribute, right: CGFloat) -> LayoutAttribute {
     var layoutAttribute = LayoutAttribute(view:left.view!, attribute: left.attribute, constant: -right, multiplier:left.multiplier)
     return layoutAttribute
 }
@@ -143,7 +143,7 @@ infix operator <~ {
     precedence 125
 }
 
-func <~ (left: NSLayoutConstraint, right: UILayoutPriority) -> NSLayoutConstraint {
+public func <~ (left: NSLayoutConstraint, right: UILayoutPriority) -> NSLayoutConstraint {
     left.priority = right
     return left
 }
@@ -153,7 +153,7 @@ infix operator <- {
     precedence 90
 }
 
-func <- (left: UIView, right: NSLayoutConstraint) -> UIView {
+public func <- (left: UIView, right: NSLayoutConstraint) -> UIView {
     left.addConstraint(right)
     return left
 }

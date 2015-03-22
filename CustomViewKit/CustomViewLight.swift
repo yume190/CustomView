@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable
 public class CustomViewLight: UIView {
     
-    var view:UIView?
+    public var view:UIView?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,7 +23,7 @@ public class CustomViewLight: UIView {
         setup()
     }
     
-    func setup(){
+    public func setup(){
         instantiateWithXib()
     }
     
@@ -49,7 +49,7 @@ extension CustomViewLight: CustomViewBundle {
         return String.className(self.classForCoder)
     }
     
-    func instantiateWithXib(){
+    private func instantiateWithXib(){
         let bundle:NSBundle? = frameworkBundle()
         let nibUrl = bundle?.URLForResource(className(), withExtension: "nib")
         if bundle == nil || nibUrl == nil {

@@ -8,48 +8,48 @@
 
 import UIKit
 
-var ViewStyleInstance: ViewStyles { get { return ViewStyles.sharedInstance } }
+public var ViewStyleInstance: ViewStyles { get { return ViewStyles.sharedInstance } }
 
 public class ViewStyle :NSObject{
-    var borderColor:UIColor?
-    var borderWidth:CGFloat?
-    var cornerRadius:CGFloat?
-    var shadowColor:UIColor?
-    var shadowRadius:CGFloat?
-    var shadowOpacity:Float?
-    var shadowOffsetY:CGFloat?
+    public var borderColor:UIColor?
+    public var borderWidth:CGFloat?
+    public var cornerRadius:CGFloat?
+    public var shadowColor:UIColor?
+    public var shadowRadius:CGFloat?
+    public var shadowOpacity:Float?
+    public var shadowOffsetY:CGFloat?
     
-    func setBorderColor(color:UIColor) -> ViewStyle{
+    public func setBorderColor(color:UIColor) -> ViewStyle{
         borderColor = color
         return self
     }
     
-    func setBorderWidth(width:CGFloat) -> ViewStyle{
+    public func setBorderWidth(width:CGFloat) -> ViewStyle{
         borderWidth = width
         return self
     }
     
-    func setCornorRadius(radius:CGFloat) -> ViewStyle{
+    public func setCornorRadius(radius:CGFloat) -> ViewStyle{
         cornerRadius = radius
         return self
     }
     
-    func setShadowColor(color:UIColor) -> ViewStyle{
+    public func setShadowColor(color:UIColor) -> ViewStyle{
         shadowColor = color
         return self
     }
     
-    func setShadowRadius(radius:CGFloat) -> ViewStyle{
+    public func setShadowRadius(radius:CGFloat) -> ViewStyle{
         shadowRadius = radius
         return self
     }
     
-    func setShadowOpacity(opacity:Float) -> ViewStyle{
+    public func setShadowOpacity(opacity:Float) -> ViewStyle{
         shadowOpacity = opacity
         return self
     }
     
-    func setShadowOffsetY(offset:CGFloat) -> ViewStyle{
+    public func setShadowOffsetY(offset:CGFloat) -> ViewStyle{
         shadowOffsetY = offset
         return self
     }
@@ -61,7 +61,7 @@ public class ViewStyle :NSObject{
 
 public class ViewStyles: NSObject {
     
-    class var sharedInstance: ViewStyles {
+    public class var sharedInstance: ViewStyles {
         dispatch_once(&Inner.token) {
             Inner.instance = ViewStyles()
         }
@@ -73,7 +73,7 @@ public class ViewStyles: NSObject {
         static var token: dispatch_once_t = 0
     }
     
-    func none() -> ViewStyle{
+    public func none() -> ViewStyle{
         return ViewStyle().setBorderColor(UIColor.clearColor())
                           .setBorderWidth(0)
                           .setCornorRadius(0)

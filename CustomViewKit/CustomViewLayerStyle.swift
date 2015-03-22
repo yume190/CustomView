@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable
 public class CustomViewLayerStyle: CustomViewLayer {
     
-    @IBInspectable var style:String = "none" {
+    @IBInspectable public var style:String = "none" {
         didSet{
             if let _style = ViewStyleInstance.valueForKey(style) as? ViewStyle {
                 _viewStyle = _style
@@ -55,7 +55,7 @@ public extension CustomViewLayerStyle {
         }
     }
     
-    public var _viewStyle:ViewStyle{
+    private var _viewStyle:ViewStyle{
         set{ setViewStyle(newValue) }
         get{ return ViewStyleInstance.none() }
     }
