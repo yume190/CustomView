@@ -389,18 +389,42 @@
 		A84C32421ABEFCDB00AD8BF2 /* CustomViewKit */ = {
 			isa = PBXGroup;
 			children = (
-				A84C32541ABEFE8100AD8BF2 /* LICENSE */,
-				A84C32431ABEFCDB00AD8BF2 /* AutoLayoutExtension.swift */,
-				A84C32441ABEFCDB00AD8BF2 /* CustomViewKit.h */,
-				A84C32451ABEFCDB00AD8BF2 /* CustomViewLayer.swift */,
-				A84C32461ABEFCDB00AD8BF2 /* CustomViewLayerStyle.swift */,
-				A84C32471ABEFCDB00AD8BF2 /* CustomViewLight.swift */,
-				A84C32481ABEFCDB00AD8BF2 /* CustomViewProtocol.swift */,
-				A84C32491ABEFCDB00AD8BF2 /* Info.plist */,
-				A84C324A1ABEFCDB00AD8BF2 /* StringExtension.swift */,
 				A84C324B1ABEFCDB00AD8BF2 /* ViewStyle.swift */,
+				A84C32611ABF07F000AD8BF2 /* Source */,
+				A84C32601ABF07DF00AD8BF2 /* Extension */,
+				A84C32621ABF080E00AD8BF2 /* Protocol */,
+				A84C32491ABEFCDB00AD8BF2 /* Info.plist */,
+				A84C32441ABEFCDB00AD8BF2 /* CustomViewKit.h */,
+				A84C32541ABEFE8100AD8BF2 /* LICENSE */,
 			);
 			path = CustomViewKit;
+			sourceTree = "<group>";
+		};
+		A84C32601ABF07DF00AD8BF2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A84C32431ABEFCDB00AD8BF2 /* AutoLayoutExtension.swift */,
+				A84C324A1ABEFCDB00AD8BF2 /* StringExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		A84C32611ABF07F000AD8BF2 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A84C32471ABEFCDB00AD8BF2 /* CustomViewLight.swift */,
+				A84C32451ABEFCDB00AD8BF2 /* CustomViewLayer.swift */,
+				A84C32461ABEFCDB00AD8BF2 /* CustomViewLayerStyle.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		A84C32621ABF080E00AD8BF2 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				A84C32481ABEFCDB00AD8BF2 /* CustomViewProtocol.swift */,
+			);
+			name = Protocol;
 			sourceTree = "<group>";
 		};
 		A87CF69D193DC5B5006BF9ED /* CustomViewSwift */ = {
