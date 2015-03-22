@@ -84,4 +84,4 @@ class CV2: CustomViewLayerStyle {
 
 Set `File's Owner` for your xib
 
-![File's Owner](/images/i4.png)
+![File's Owner](/images/i5.png)
