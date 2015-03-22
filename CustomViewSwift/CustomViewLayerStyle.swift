@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class CustomViewStyle: CustomViewLayer {
+public class CustomViewLayerStyle: CustomViewLayer {
     
     @IBInspectable var style:String = "none" {
         didSet{
@@ -22,7 +22,7 @@ public class CustomViewStyle: CustomViewLayer {
 }
 
 // MARK: Style
-public extension CustomViewStyle {
+public extension CustomViewLayerStyle {
     private func setViewStyle(vStyle:ViewStyle){
         println("set style")
         

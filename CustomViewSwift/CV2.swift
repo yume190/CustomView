@@ -8,7 +8,7 @@
 
 import UIKit
 
-class CV2: CustomViewStyle {
+class CV2: CustomViewLayerStyle {
 
     override func setup() {
         super.setup()

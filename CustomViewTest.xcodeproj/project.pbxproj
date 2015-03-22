@@ -33,7 +33,7 @@
 		A8043E891AB4909800F09A7C /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8043E881AB4909800F09A7C /* CustomView.swift */; };
 		A8043E8D1AB493DE00F09A7C /* CV1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8043E8C1AB493DE00F09A7C /* CV1.swift */; };
 		A8043E911AB49BEA00F09A7C /* CV1.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8043E901AB49BEA00F09A7C /* CV1.xib */; };
-		A81030791ABBBB7F00B95CC3 /* CustomViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81030781ABBBB7F00B95CC3 /* CustomViewStyle.swift */; };
+		A81030791ABBBB7F00B95CC3 /* CustomViewLayerStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81030781ABBBB7F00B95CC3 /* CustomViewLayerStyle.swift */; };
 		A810307E1ABBBC1E00B95CC3 /* CustomViewLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A810307D1ABBBC1E00B95CC3 /* CustomViewLight.swift */; };
 		A81030821ABBBEFD00B95CC3 /* CustomViewLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81030811ABBBEFD00B95CC3 /* CustomViewLayer.swift */; };
 		A854471519C1CA0A00669522 /* LiveRenderKVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A854471419C1CA0A00669522 /* LiveRenderKVC.swift */; };
@@ -211,7 +211,7 @@
 		A8043E881AB4909800F09A7C /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		A8043E8C1AB493DE00F09A7C /* CV1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CV1.swift; sourceTree = "<group>"; };
 		A8043E901AB49BEA00F09A7C /* CV1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CV1.xib; sourceTree = "<group>"; };
-		A81030781ABBBB7F00B95CC3 /* CustomViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewStyle.swift; sourceTree = "<group>"; };
+		A81030781ABBBB7F00B95CC3 /* CustomViewLayerStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewLayerStyle.swift; sourceTree = "<group>"; };
 		A810307D1ABBBC1E00B95CC3 /* CustomViewLight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewLight.swift; sourceTree = "<group>"; };
 		A81030811ABBBEFD00B95CC3 /* CustomViewLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomViewLayer.swift; sourceTree = "<group>"; };
 		A854471419C1CA0A00669522 /* LiveRenderKVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveRenderKVC.swift; sourceTree = "<group>"; };
@@ -480,7 +480,7 @@
 			children = (
 				A810307D1ABBBC1E00B95CC3 /* CustomViewLight.swift */,
 				A81030811ABBBEFD00B95CC3 /* CustomViewLayer.swift */,
-				A81030781ABBBB7F00B95CC3 /* CustomViewStyle.swift */,
+				A81030781ABBBB7F00B95CC3 /* CustomViewLayerStyle.swift */,
 			);
 			name = "CustomView Ver 3";
 			sourceTree = "<group>";
@@ -867,7 +867,7 @@
 				A87CF6C4193DC5E1006BF9ED /* CustomViewWithSwift.swift in Sources */,
 				4D5851F71999E6D200627BBF /* ViewSource.swift in Sources */,
 				A88B62DB1ABAC3A7007DC06B /* CustomViewProtocol.swift in Sources */,
-				A81030791ABBBB7F00B95CC3 /* CustomViewStyle.swift in Sources */,
+				A81030791ABBBB7F00B95CC3 /* CustomViewLayerStyle.swift in Sources */,
 				A8043E871AB4900B00F09A7C /* AutoLayoutExtension.swift in Sources */,
 				A8043E891AB4909800F09A7C /* CustomView.swift in Sources */,
 				A86FCB731AA6B4E500DC6151 /* StringExtension.swift in Sources */,
