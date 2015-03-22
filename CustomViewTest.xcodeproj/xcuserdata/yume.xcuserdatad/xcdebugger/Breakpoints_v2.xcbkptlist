@@ -6,17 +6,89 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CustomViewObjc/CustomViewTemplate.m"
-            timestampString = "434541957.890481"
+            filePath = "CustomViewSwift/CustomView.swift"
+            timestampString = "448454989.475502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "56"
-            endingLineNumber = "56"
-            landmarkName = "-drawRect:"
-            landmarkType = "5">
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "CustomView"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomViewSwift.CustomView.style.didset : Swift.String"
+                  moduleName = "CustomViewSwift"
+                  urlString = "file:///Users/yume/CustomView/CustomViewSwift/CustomView.swift"
+                  timestampString = "448516064.020327"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "21">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomViewSwift.CustomView.style.setter : Swift.String"
+                  moduleName = "CustomViewSwift"
+                  urlString = "file:///Users/yume/CustomView/CustomViewSwift/CustomView.swift"
+                  timestampString = "448516064.020571"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "47">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomViewSwift.CustomView.style.setter : Swift.String"
+                  moduleName = "CustomViewSwift"
+                  urlString = "file:///Users/yume/CustomView/CustomViewSwift/CustomView.swift"
+                  timestampString = "448516064.020683"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "69">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc CustomViewSwift.CustomView.style.setter : Swift.String"
+                  moduleName = "CustomViewSwift"
+                  urlString = "file:///Users/yume/CustomView/CustomViewSwift/CustomView.swift"
+                  timestampString = "448516064.020785"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "71">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc CustomViewSwift.CustomView.style.setter : Swift.String"
+                  moduleName = "CustomViewSwift"
+                  urlString = "file:///Users/yume/CustomView/CustomViewSwift/CustomView.swift"
+                  timestampString = "448516064.020882"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "93">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -25,30 +97,114 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "CustomViewObjc/FiveSquare.m"
-            timestampString = "434541973.304239"
+            filePath = "CustomViewSwift/CustomViewStyle.swift"
+            timestampString = "448515325.476741"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "-layoutSubviews"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CustomViewSwift/LiveRenderKVC.swift"
-            timestampString = "447134451.135373"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "className()"
-            landmarkType = "5">
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "CustomViewStyle"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomViewSwift.CustomViewStyle.style.materializeForSet : Swift.String"
+                  moduleName = "CustomViewSwift"
+                  urlString = "file:///Users/yume/CustomView/CustomViewSwift/CustomViewStyle.swift"
+                  timestampString = "448516064.021216"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "13">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomViewSwift.CustomViewStyle.init (CustomViewSwift.CustomViewStyle.Type)(frame : C.CGRect) -&gt; CustomViewSwift.CustomViewStyle"
+                  moduleName = "CustomViewSwift"
+                  urlString = "file:///Users/yume/CustomView/CustomViewSwift/CustomViewStyle.swift"
+                  timestampString = "448516064.021408"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomViewSwift.CustomViewStyle.__allocating_init (CustomViewSwift.CustomViewStyle.Type)(frame : C.CGRect) -&gt; CustomViewSwift.CustomViewStyle"
+                  moduleName = "CustomViewSwift"
+                  urlString = "file:///Users/yume/CustomView/CustomViewSwift/CustomViewStyle.swift"
+                  timestampString = "448516064.021677"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc CustomViewSwift.CustomViewStyle.init (CustomViewSwift.CustomViewStyle.Type)(frame : C.CGRect) -&gt; CustomViewSwift.CustomViewStyle"
+                  moduleName = "CustomViewSwift"
+                  urlString = "file:///Users/yume/CustomView/CustomViewSwift/CustomViewStyle.swift"
+                  timestampString = "448516064.021965"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomViewSwift.CustomViewStyle.init (CustomViewSwift.CustomViewStyle.Type)(coder : ObjectiveC.NSCoder) -&gt; CustomViewSwift.CustomViewStyle"
+                  moduleName = "CustomViewSwift"
+                  urlString = "file:///Users/yume/CustomView/CustomViewSwift/CustomViewStyle.swift"
+                  timestampString = "448516064.022313"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CustomViewSwift.CustomViewStyle.__allocating_init (CustomViewSwift.CustomViewStyle.Type)(coder : ObjectiveC.NSCoder) -&gt; CustomViewSwift.CustomViewStyle"
+                  moduleName = "CustomViewSwift"
+                  urlString = "file:///Users/yume/CustomView/CustomViewSwift/CustomViewStyle.swift"
+                  timestampString = "448516064.023772"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "57">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "@objc CustomViewSwift.CustomViewStyle.init (CustomViewSwift.CustomViewStyle.Type)(coder : ObjectiveC.NSCoder) -&gt; CustomViewSwift.CustomViewStyle"
+                  moduleName = "CustomViewSwift"
+                  urlString = "file:///Users/yume/CustomView/CustomViewSwift/CustomViewStyle.swift"
+                  timestampString = "448516064.024382"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "13">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

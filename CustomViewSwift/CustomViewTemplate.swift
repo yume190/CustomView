@@ -99,7 +99,7 @@ class CustomViewTemplate: UIView ,CustomViewTemplateProtocol{
     }
     
     func frameworkBundle() -> NSBundle{
-        return NSBundle(identifier: bundleIdentifier())
+        return NSBundle(identifier: bundleIdentifier())!
     }
     
     func bundleIdentifier() -> String{
