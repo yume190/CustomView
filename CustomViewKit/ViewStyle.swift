@@ -10,7 +10,7 @@ import UIKit
 
 public var ViewStyleInstance: ViewStyles { get { return ViewStyles.sharedInstance } }
 
-public class ViewStyle :NSObject{
+public class ViewStyle{
     public var borderColor:UIColor?
     public var borderWidth:CGFloat?
     public var cornerRadius:CGFloat?
@@ -53,10 +53,7 @@ public class ViewStyle :NSObject{
         shadowOffsetY = offset
         return self
     }
-    
-    override init(){
-    }
-    
+        
 }
 
 public class ViewStyles: NSObject {
