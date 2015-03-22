@@ -10,7 +10,7 @@ import UIKit
 
 public var ViewStyleInstance: ViewStyles { get { return ViewStyles.sharedInstance } }
 
-public class ViewStyle{
+public class ViewStyle: NSObject{
     public var borderColor:UIColor?
     public var borderWidth:CGFloat?
     public var cornerRadius:CGFloat?
@@ -19,41 +19,41 @@ public class ViewStyle{
     public var shadowOpacity:Float?
     public var shadowOffsetY:CGFloat?
     
-    public func setBorderColor(color:UIColor) -> ViewStyle{
-        borderColor = color
+    public func set(#borderColor:UIColor) -> ViewStyle{
+        self.borderColor = borderColor
         return self
     }
     
-    public func setBorderWidth(width:CGFloat) -> ViewStyle{
-        borderWidth = width
+    public func set(#borderWidth:CGFloat) -> ViewStyle{
+        self.borderWidth = borderWidth
         return self
     }
     
-    public func setCornorRadius(radius:CGFloat) -> ViewStyle{
-        cornerRadius = radius
+    public func set(#cornorRadius:CGFloat) -> ViewStyle{
+        self.cornerRadius = cornorRadius
         return self
     }
     
-    public func setShadowColor(color:UIColor) -> ViewStyle{
-        shadowColor = color
+    public func set(#shadowColor:UIColor) -> ViewStyle{
+        self.shadowColor = shadowColor
         return self
     }
     
-    public func setShadowRadius(radius:CGFloat) -> ViewStyle{
-        shadowRadius = radius
+    public func set(#shadowRadius:CGFloat) -> ViewStyle{
+        self.shadowRadius = shadowRadius
         return self
     }
     
-    public func setShadowOpacity(opacity:Float) -> ViewStyle{
-        shadowOpacity = opacity
+    public func set(#shadowOpacity:Float) -> ViewStyle{
+        self.shadowOpacity = shadowOpacity
         return self
     }
     
-    public func setShadowOffsetY(offset:CGFloat) -> ViewStyle{
-        shadowOffsetY = offset
+    public func set(#shadowOffsetY:CGFloat) -> ViewStyle{
+        self.shadowOffsetY = shadowOffsetY
         return self
     }
-        
+    
 }
 
 public class ViewStyles: NSObject {
@@ -71,21 +71,21 @@ public class ViewStyles: NSObject {
     }
     
     public func none() -> ViewStyle{
-        return ViewStyle().setBorderColor(UIColor.clearColor())
-                          .setBorderWidth(0)
-                          .setCornorRadius(0)
-                          .setShadowColor(UIColor.clearColor())
-                          .setShadowRadius(0)
-                          .setShadowOpacity(0)
-                          .setShadowOffsetY(0)
+        return ViewStyle().set(borderColor: UIColor.clearColor())
+                          .set(borderWidth:0)
+                          .set(cornorRadius:0)
+                          .set(shadowColor:UIColor.clearColor())
+                          .set(shadowRadius:0)
+                          .set(shadowOpacity:0)
+                          .set(shadowOffsetY:0)
     }
     
     public func fb() -> ViewStyle{
-        return ViewStyle().setBorderWidth(10).setBorderColor(UIColor.blueColor()).setCornorRadius(20)
+        return ViewStyle().set(borderWidth:10).set(borderColor:UIColor.blueColor()).set(cornorRadius:20)
     }
     
     public func yume() -> ViewStyle{
-        return ViewStyle().setBorderWidth(3).setBorderColor(UIColor.purpleColor()).setCornorRadius(30)
+        return ViewStyle().set(borderWidth:3).set(borderColor:UIColor.purpleColor()).set(cornorRadius:30)
     }
     
     override public func valueForUndefinedKey(key: String) -> AnyObject? {
