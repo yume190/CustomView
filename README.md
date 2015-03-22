@@ -29,7 +29,7 @@ use_frameworks!
 pod 'CustomView', '~> 1.1'
 ```
 
-then create a swift file `CustomViewExtension`, and override `bundleIdentifier` method
+then create a swift file `CustomViewKitExtension.swift`, and override `bundleIdentifier` method
 
 ```
 import UIKit
