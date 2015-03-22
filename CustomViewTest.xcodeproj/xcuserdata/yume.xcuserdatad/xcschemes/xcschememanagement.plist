@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CustomViewKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>CustomViewObjc.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -28,6 +33,16 @@
 			<true/>
 		</dict>
 		<key>4D8B2AAF1910E7AE0023EA7F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A84C31E11ABEE3E100AD8BF2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A84C31EB1ABEE3E100AD8BF2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
