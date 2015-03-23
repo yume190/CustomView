@@ -85,3 +85,29 @@ class CV2: CustomViewLayerStyle {
 Set `File's Owner` for your xib
 
 ![File's Owner](/images/i5.png)
+
+### Custom Style
+
+##### Add your custom style
+
+```
+extension ViewStyles {
+
+    public func customStyle1() -> ViewStyle{
+        return ViewStyle().set(borderWidth:20).set(borderColor:UIColor.darkGrayColor()).set(cornorRadius:20)
+    }
+
+    public func customStyle2() -> ViewStyle{
+        return ViewStyle().set(borderWidth:30).set(borderColor:UIColor.greenColor()).set(cornorRadius:30)
+    }
+}
+```
+
+##### Use your custom style
+
+Set style by string`(method name)`, and `CustomViewLayerStyle` will find the method with KVC(Key Value Coding).
+
+```
+var cv2 = CV2(frame:CGRectMake(0, 100, 150, 150))
+cv2.style = "customStyle1"
+```
