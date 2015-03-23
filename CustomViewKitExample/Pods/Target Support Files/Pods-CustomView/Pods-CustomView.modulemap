@@ -1,0 +1,6 @@
+framework module CustomView {
+  umbrella header "Pods-CustomView-umbrella.h"
+
+  export *
+  module * { export * }
+}

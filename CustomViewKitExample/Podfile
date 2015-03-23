@@ -1,0 +1,6 @@
+#source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+use_frameworks!
+pod 'CustomView', '~> 1.0'
+#pod 'CustomViewKit', :git => 'https://github.com/yume190/CustomView.git', :tag => '1.0'
