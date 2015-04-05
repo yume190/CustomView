@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class CustomViewLayer: CustomViewLight {
+public class CustomViewLayer: CustomViewSource {
     
     @IBInspectable public var borderColor: UIColor? {
         didSet {

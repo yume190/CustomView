@@ -146,6 +146,35 @@
 			path = "../Target Support Files/Pods-CustomView";
 			sourceTree = "<group>";
 		};
+		A85147F31AD1671B00E07178 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				D0A5A729961876586E219A33 /* CustomViewLight.swift */,
+				A85147ED1AD1637200E07178 /* CustomViewSource.swift */,
+				277716CFCAB7EBD14E542B7B /* CustomViewLayer.swift */,
+				60C0337A45CA52AB8DE22B79 /* CustomViewLayerStyle.swift */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
+		A85147F41AD1672F00E07178 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D97529EAB104ACD30659E1AB /* AutoLayoutExtension.swift */,
+				BADA44652ED1EE1AF8D18AEF /* StringExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		A85147F51AD1674000E07178 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A91EB37056318566FC9B7837 /* ViewStyle.swift */,
+				A85147F11AD163AE00E07178 /* ViewSource.swift */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		CB7CF30BA5FE1201491172EA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,16 +206,11 @@
 		F36F80DF6101981683DC9432 /* CustomView */ = {
 			isa = PBXGroup;
 			children = (
-				D97529EAB104ACD30659E1AB /* AutoLayoutExtension.swift */,
-				277716CFCAB7EBD14E542B7B /* CustomViewLayer.swift */,
-				60C0337A45CA52AB8DE22B79 /* CustomViewLayerStyle.swift */,
-				D0A5A729961876586E219A33 /* CustomViewLight.swift */,
 				DFFC79B5BA6CAF486AE21524 /* CustomViewProtocol.swift */,
-				BADA44652ED1EE1AF8D18AEF /* StringExtension.swift */,
-				A91EB37056318566FC9B7837 /* ViewStyle.swift */,
+				A85147F51AD1674000E07178 /* Resource */,
+				A85147F41AD1672F00E07178 /* Extension */,
+				A85147F31AD1671B00E07178 /* CustomView */,
 				8F148C3B074F10CFF20497B2 /* Support Files */,
-				A85147ED1AD1637200E07178 /* CustomViewSource.swift */,
-				A85147F11AD163AE00E07178 /* ViewSource.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
