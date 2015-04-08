@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'CustomView'
-  s.version  = '1.1'
+  s.version  = '1.2'
   s.license  = 'MIT'
   s.summary  = "A Light weight Lib, custom a view with xib & live render"
   s.homepage = 'https://github.com/yume190/CustomView'
