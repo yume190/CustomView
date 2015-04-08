@@ -28,7 +28,7 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="viewSource" value="yume3"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="viewSource" value="cv2Source2"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>

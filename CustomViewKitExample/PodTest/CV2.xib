@@ -5,9 +5,6 @@
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CV2" customModule="PodTest" customModuleProvider="target">
-            <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="string" keyPath="style" value="CV2"/>
-            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="label1" destination="GRs-O7-j97" id="u6a-zI-pzF"/>
                 <outlet property="label2" destination="rqv-Dw-tk4" id="xGd-LE-kd3"/>

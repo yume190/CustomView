@@ -9,6 +9,6 @@
 // CustomView
 #define COCOAPODS_POD_AVAILABLE_CustomView
 #define COCOAPODS_VERSION_MAJOR_CustomView 1
-#define COCOAPODS_VERSION_MINOR_CustomView 1
+#define COCOAPODS_VERSION_MINOR_CustomView 2
 #define COCOAPODS_VERSION_PATCH_CustomView 0
 

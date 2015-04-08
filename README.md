@@ -15,7 +15,13 @@ IOS Custom View with xib(IOS 7 &amp; 8) and Live Render (IOS 8)
 
 # CustomViewKit
 
-### Install
+### Manual Install
+
+You can download this repo and drag `CustomViewKit` to your project.
+
+then find the swift file `CustomViewLight.swift`, and replace `bundleIdentifier return value` to your bundleIdentifier
+
+### Install with cocoapod
 
 Add a Podfile at your project
 
@@ -78,7 +84,9 @@ import UIKit
 import CustomView
 
 class CV2: CustomViewLayerStyle {
-
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
 }
 ```
 
@@ -110,4 +118,43 @@ Set style by string`(method name)`, and `CustomViewLayerStyle` will find the met
 ```
 var cv2 = CV2(frame:CGRectMake(0, 100, 150, 150))
 cv2.style = "customStyle1"
+```
+
+### Custom View Source
+
+##### Add your custom view source
+
+> NOTE : return type must be `ViewSource`
+
+```
+extension ViewSources {
+
+    public var cv2Source1:ViewSource
+    {
+        get {
+            return YumeViewSource<CV2>(){
+                (CV2) -> () in
+                CV2.label1.text = "11111"
+                CV2.label2.text = "22222"
+                CV2.label3.text = "33333"
+            }
+        }
+    }
+
+    public func cv2Source2() -> ViewSource{
+        return YumeViewSource<CV2>(){
+            (CV2) -> () in
+            CV2.label1.text = "abc"
+            CV2.label2.text = "123"
+            CV2.label3.text = "xyz"
+        }
+    }
+}
+```
+
+##### Use your custom view source
+
+```
+var cv2 = CV2(frame:CGRectMake(0, 100, 150, 150))
+cv2.viewSource = "cv2Source1"
 ```

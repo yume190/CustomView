@@ -33,6 +33,12 @@ public class CustomViewLight: UIView {
     
 }
 
+protocol CustomViewBundle {
+    func frameworkBundle() -> NSBundle?
+    func bundleIdentifier() -> String
+    func className() -> String
+}
+
 // MARK: Bundle
 extension CustomViewLight: CustomViewBundle {
     

@@ -9,7 +9,7 @@
 import UIKit
 import CustomView
 
-class CV1: CustomViewLight {
+class CV1: CustomViewLayerStyle {
    
     override func setup() {
         super.setup()

@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         
         var cv2 = CV2(frame:CGRectMake(0, 100, 150, 175))
         cv2.style = "yume"
-        cv2.viewSource = "yume2"
+        cv2.viewSource = "cv2Source1"
         self.view.addSubview(cv2)
 
         // Do any additional setup after loading the view, typically from a nib.
