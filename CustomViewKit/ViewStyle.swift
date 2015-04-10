@@ -10,7 +10,7 @@ import UIKit
 
 public var ViewStyleInstance: ViewStyles { get { return ViewStyles.sharedInstance } }
 
-public class ViewStyle: NSObject{
+@objc public class ViewStyle{
     public var borderColor:UIColor?
     public var borderWidth:CGFloat?
     public var cornerRadius:CGFloat?
@@ -18,6 +18,8 @@ public class ViewStyle: NSObject{
     public var shadowRadius:CGFloat?
     public var shadowOpacity:Float?
     public var shadowOffsetY:CGFloat?
+    
+    public init(){}
     
     public func set(#borderColor:UIColor) -> ViewStyle{
         self.borderColor = borderColor
