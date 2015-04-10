@@ -10,12 +10,14 @@ import UIKit
 import CustomView
 
 class CV1: CustomViewLayerStyle {
+    
+    var label1:UILabel!
    
     override func setup() {
         super.setup()
-        var c = UILabel(frame: CGRectMake(0, 0, 100, 100))
-        c.text="1000"
-        self.view?.addSubview(c)
+        label1 = UILabel(frame: CGRectMake(0, 0, 100, 100))
+        label1.text="1000"
+        self.view?.addSubview(label1)
     }
     
 }

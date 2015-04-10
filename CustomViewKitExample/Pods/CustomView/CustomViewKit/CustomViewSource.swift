@@ -18,10 +18,6 @@ public extension CustomViewSource{
             if let sources = ViewSourcesInstance.valueForKeyPath(newValue) as? DummyViewSource {
                 sources.action(self)
             }
-            
-            //            if let vs = (ViewSourcesInstance --> newValue) as? CCVV{
-            //                vs.action(self)
-            //            }
         }
         get{ return "" }
     }

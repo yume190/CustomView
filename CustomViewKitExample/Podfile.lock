@@ -1,10 +1,10 @@
 PODS:
-  - CustomView (1.2)
+  - CustomView (1.3)
 
 DEPENDENCIES:
-  - CustomView (~> 1.0)
+  - CustomView (~> 1.3)
 
 SPEC CHECKSUMS:
-  CustomView: 6de998ae7f21704c62d6edd28660f3a0b36a8680
+  CustomView: c6ef1dce9b12452ed07a8c50026965a76bbb8742
 
 COCOAPODS: 0.36.3

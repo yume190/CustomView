@@ -32,7 +32,7 @@ Add CustomViewKit pod
 ```
 platform :ios, '8.0'
 use_frameworks!
-pod 'CustomView', '~> 1.1'
+pod 'CustomView', '~> 1.3'
 ```
 
 then create a swift file `CustomViewKitExtension.swift`, and override `bundleIdentifier` method

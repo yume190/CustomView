@@ -48,7 +48,7 @@ extension CustomViewLight: CustomViewBundle {
     
     public func bundleIdentifier() -> String{
         //Bundle Identifier can be find at Target -> Your Framework -> Bundle Identifier
-        return "com.yume190.CustomViewSwift"
+        return NSBundle.mainBundle().bundleIdentifier ?? "com.yume190.CustomViewSwift"
     }
     
     public func className() -> String{
@@ -66,7 +66,7 @@ extension CustomViewLight: CustomViewBundle {
         var nib:UINib = UINib(nibName: className(), bundle: bundle)
         var views = nib.instantiateWithOwner(self, options: nil)
         
-        if countElements(views) >= 1 {
+        if count(views) >= 1 {
             if let view = views[0] as? UIView {
                 matchTwoViewsUsingAutolayout(view)
             }

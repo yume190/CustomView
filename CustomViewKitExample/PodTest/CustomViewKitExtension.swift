@@ -30,6 +30,20 @@ extension ViewStyles {
 
 extension ViewSources {
     
+    public func cv1Source1() -> ViewSource{
+        return YumeViewSource<CV1>(){
+            (CV1) -> () in
+            CV1.label1.text = "100"
+        }
+    }
+    
+    public func cv1Source2() -> ViewSource{
+        return YumeViewSource<CV1>(){
+            (CV1) -> () in
+            CV1.label1.text = "2000"
+        }
+    }
+    
     public var cv2Source1:ViewSource
     {
         get {
