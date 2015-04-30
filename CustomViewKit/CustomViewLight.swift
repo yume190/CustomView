@@ -35,7 +35,6 @@ public class CustomViewLight: UIView {
 
 protocol CustomViewBundle {
     func frameworkBundle() -> NSBundle?
-    func bundleIdentifier() -> String
     func className() -> String
 }
 
@@ -43,12 +42,7 @@ protocol CustomViewBundle {
 extension CustomViewLight: CustomViewBundle {
     
     public func frameworkBundle() -> NSBundle?{
-        return NSBundle(identifier: bundleIdentifier())
-    }
-    
-    public func bundleIdentifier() -> String{
-        //Bundle Identifier can be find at Target -> Your Framework -> Bundle Identifier
-        return NSBundle.mainBundle().bundleIdentifier ?? "com.yume190.CustomViewSwift"
+        return NSBundle(forClass: self.classForCoder)
     }
     
     public func className() -> String{
